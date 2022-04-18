@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Post extends Model
 {
     use HasFactory;
+
+    protected $table = 'posts'; // явная привязка к таблице
+    protected $guarded = false; // чтобы изменять данные в таблице
 }

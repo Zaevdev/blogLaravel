@@ -13,9 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+//Route::group(['namespace' => 'App\Http\Controllers\Blog'], function () {
+//    Route::get('/', IndexController::class);
+//});
+
+Route::prefix('/')->group(function () {
+    Route::get('/', \App\Http\Controllers\Blog\IndexController::class);
 });
+
+Route::prefix('admin')->group(function () {
+    Route::get('/', \App\Http\Controllers\Admin\Blog\IndexController::class);
+});
+
 
 Auth::routes();
 

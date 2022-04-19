@@ -1,17 +1,18 @@
 @extends('adminlte::page')
 @section('title', 'Categories')
 @section('content_header')
-    <h1>Adding a category</h1>
+    <h1>Edit a category</h1>
 @stop
 @section('content')
 
     <div class="card card-primary">
-        <form action="{{route('admin.categories.store')}}" method="POST">
+        <form action="{{route('admin.categories.update', $category->id)}}" method="POST">
             @csrf
+            @method('PATCH')
             <div class="card-body">
                 <div class="form-group">
                     <label>Title category</label>
-                    <input type="text" class="form-control" name="title" placeholder="Enter title">
+                    <input type="text" class="form-control" name="title" placeholder="Enter title" value="{{$category->title}}">
                 </div>
                 @error('title')
                 <div class="alert alert-danger alert-dismissible">
@@ -21,7 +22,7 @@
                 </div>
                 @enderror
                 <div class="card-footer">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary">Update</button>
                 </div>
         </form>
     </div>

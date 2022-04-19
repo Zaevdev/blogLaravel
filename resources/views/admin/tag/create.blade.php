@@ -1,16 +1,16 @@
 @extends('adminlte::page')
-@section('title', 'Categories')
+@section('title', 'Tags')
 @section('content_header')
-    <h1>Adding a category</h1>
+    <h1>Adding a tag</h1>
 @stop
 @section('content')
 
     <div class="card card-primary">
-        <form action="{{route('admin.categories.store')}}" method="POST">
+        <form action="{{route('admin.tag.store')}}" method="POST">
             @csrf
             <div class="card-body">
                 <div class="form-group">
-                    <label>Title category</label>
+                    <label>Title tag</label>
                     <input type="text" class="form-control" name="title" placeholder="Enter title">
                 </div>
                 @error('title')

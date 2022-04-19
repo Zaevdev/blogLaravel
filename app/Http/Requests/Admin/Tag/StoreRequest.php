@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\Admin\Category;
+namespace App\Http\Requests\Admin\Tag;
 
 use Illuminate\Foundation\Http\FormRequest;
 
@@ -24,7 +24,7 @@ class StoreRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required|string|unique:categories,title',
+            'title' => 'required|string|unique:tags,title,NULL,id,deleted_at,NULL',
         ];
     }
 }

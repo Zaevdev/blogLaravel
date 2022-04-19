@@ -7,12 +7,11 @@ use App\Http\Requests\Admin\Category\UpdateRequest;
 use App\Models\Category;
 use Illuminate\Http\Request;
 
-class UpdateController extends Controller
+class DeleteController extends Controller
 {
-    public function __invoke(UpdateRequest $request, Category $category)
+    public function __invoke(Category $category)
     {
-        $data = $request->validated();
-        $category->update($data);
-        return view('admin.categories.show', compact('category'));
+        $category->delete();
+        return redirect()->route('admin.categories.index');
     }
 }

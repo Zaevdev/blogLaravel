@@ -1,35 +1,21 @@
 @extends('adminlte::page')
-@section('title', 'Categories')
+@section('title', 'Category')
 @section('content_header')
-    <h1>Categories</h1>
+    <h1>Category</h1>
 @stop
 @section('content')
-    <p>Welcome to this beautiful admin panel.</p>
-    <a class="btn btn-app" href="{{route('admin.categories.create')}}">
-        <i class="fas fa-edit"></i> Add category
-    </a>
-    <a class="btn btn-app">
-        <i class="fas fa-edit"></i> Edit
-    </a>
     <div class="card-body">
-        <table class="table table-bordered">
-            <thead>
-            <tr>
-                <th style="width: 10px">#</th>
-                <th>Title of category</th>
-                <th style="width: 40px">Label</th>
-            </tr>
-            </thead>
-            <tbody>
-            @foreach($categories as $category)
-                <tr>
-                    <td>{{$category->id}}</td>
-                    <td>{{$category->title}}</td>
-                    <td><span class="badge bg-danger">55%</span></td>
-                </tr>
-            @endforeach
-            </tbody>
-        </table>
+        <div class="card">
+            <div class="card-body">
+                <h5><span class="badge bg-secondary">#{{$category->id}}</span>&nbsp;{{$category->title}} </h5>
+                <a href="{{route('admin.categories.edit', $category->id)}}" class="btn btn-primary">Edit</a>
+                <form action="{{route('admin.categories.delete', $category->id)}}" class="btn btn-danger" method="POST">
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="border-0 bg-transparent text-white">Delete</button>
+                </form>
+            </div>
+        </div>
     </div>
 @stop
 @section('css')

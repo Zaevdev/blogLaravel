@@ -1,18 +1,18 @@
 @extends('adminlte::page')
-@section('title', 'Categories')
+@section('title', 'Tags')
 @section('content_header')
-    <h1>Edit a category</h1>
+    <h1>Edit a tag</h1>
 @stop
 @section('content')
 
     <div class="card card-primary">
-        <form action="{{route('admin.categories.update', $category->id)}}" method="POST">
+        <form action="{{route('admin.tag.update', $tag->id)}}" method="POST">
             @csrf
             @method('PATCH')
             <div class="card-body">
                 <div class="form-group">
-                    <label>Title category</label>
-                    <input type="text" class="form-control" name="title" placeholder="Enter title" value="{{$category->title}}">
+                    <label>Title tag</label>
+                    <input type="text" class="form-control" name="title" placeholder="Enter title" value="{{$tag->title}}">
                 </div>
                 @error('title')
                 <div class="alert alert-danger alert-dismissible">

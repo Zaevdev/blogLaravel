@@ -2,10 +2,13 @@
 
 namespace App\Providers;
 
+use App\Models\Category;
+use App\Models\Tag;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Event;
+use JeroenNoten\LaravelAdminLte\Events\BuildingMenu;
 
 class EventServiceProvider extends ServiceProvider
 {
@@ -27,7 +30,25 @@ class EventServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        Event::listen(BuildingMenu::class, function (BuildingMenu $event) {
+            // Add some items to the menu...
+            $event->menu->addAfter('posts', [
+                'key' => 'categories',
+                'text' => 'Categories',
+                'route' => 'admin.categories.index',
+                'icon' => 'far fa-fw fa fa-paperclip',
+                'label' => Category::all()->count(),
+                'label_color' => 'success',
+            ]);
+            $event->menu->addAfter('categories', [
+                'key' => 'tags',
+                'text' => 'Tags',
+                'route' => 'admin.tag.index',
+                'icon' => 'far fa-fw fa fa-tag',
+                'label' => Tag::all()->count(),
+                'label_color' => 'success',
+            ]);
+        });
     }
 
     /**

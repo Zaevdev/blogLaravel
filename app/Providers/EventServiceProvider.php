@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Models\Category;
+use App\Models\Post;
 use App\Models\Tag;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
@@ -31,7 +32,14 @@ class EventServiceProvider extends ServiceProvider
     public function boot()
     {
         Event::listen(BuildingMenu::class, function (BuildingMenu $event) {
-            // Add some items to the menu...
+            $event->menu->addAfter('main_navigation', [
+                'key' => 'posts',
+                'text' => 'Posts',
+                'route' => 'admin.post.index',
+                'icon' => 'far fa-fw fa-list-alt',
+                'label' => Post::all()->count(),
+                'label_color' => 'success',
+            ]);
             $event->menu->addAfter('posts', [
                 'key' => 'categories',
                 'text' => 'Categories',

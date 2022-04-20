@@ -1,4 +1,5 @@
 <?php
+
 return [
 
     /*
@@ -187,7 +188,7 @@ return [
     */
 
     'use_route_url' => false,
-    'dashboard_url' => 'home',
+    'dashboard_url' => 'admin',
     'logout_url' => 'logout',
     'login_url' => 'login',
     'register_url' => 'register',
@@ -239,81 +240,76 @@ return [
             'type' => 'sidebar-menu-search',
             'text' => 'search',
         ],
-        ['header' => 'main_navigation'],
         [
-            'key' => 'posts',
-            'text' => 'Posts',
-            'url' => 'admin/',
-            'icon' => 'far fa-fw fa-list-alt',
-            'label' => 4,
-            'label_color' => 'success',
+            'header' => 'main_navigation',
+            'key' => 'main_navigation',
         ],
-        ['header' => 'account_settings'],
-        [
-            'text' => 'profile',
-            'url' => 'admin/settings',
-            'icon' => 'fas fa-fw fa-user',
-        ],
-        [
-            'text' => 'change_password',
-            'url' => 'admin/settings',
-            'icon' => 'fas fa-fw fa-lock',
-        ],
-        [
-            'text' => 'multilevel',
-            'icon' => 'fas fa-fw fa-share',
-            'submenu' => [
-                [
-                    'text' => 'level_one',
-                    'url' => '#',
-                ],
-                [
-                    'text' => 'level_one',
-                    'url' => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'level_two',
-                            'url' => '#',
-                        ],
-                        [
-                            'text' => 'level_two',
-                            'url' => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'level_three',
-                                    'url' => '#',
-                                ],
-                                [
-                                    'text' => 'level_three',
-                                    'url' => '#',
-                                ],
+    ['header' => 'account_settings'],
+    [
+        'text' => 'profile',
+        'url' => 'admin/settings',
+        'icon' => 'fas fa-fw fa-user',
+    ],
+    [
+        'text' => 'change_password',
+        'url' => 'admin/settings',
+        'icon' => 'fas fa-fw fa-lock',
+    ],
+    [
+        'text' => 'multilevel',
+        'icon' => 'fas fa-fw fa-share',
+        'submenu' => [
+            [
+                'text' => 'level_one',
+                'url' => '#',
+            ],
+            [
+                'text' => 'level_one',
+                'url' => '#',
+                'submenu' => [
+                    [
+                        'text' => 'level_two',
+                        'url' => '#',
+                    ],
+                    [
+                        'text' => 'level_two',
+                        'url' => '#',
+                        'submenu' => [
+                            [
+                                'text' => 'level_three',
+                                'url' => '#',
+                            ],
+                            [
+                                'text' => 'level_three',
+                                'url' => '#',
                             ],
                         ],
                     ],
                 ],
-                [
-                    'text' => 'level_one',
-                    'url' => '#',
-                ],
+            ],
+            [
+                'text' => 'level_one',
+                'url' => '#',
             ],
         ],
-        ['header' => 'labels'],
-        [
-            'text' => 'important',
-            'icon_color' => 'red',
-            'url' => '#',
-        ],
-        [
-            'text' => 'warning',
-            'icon_color' => 'yellow',
-            'url' => '#',
-        ],
-        [
-            'text' => 'information',
-            'icon_color' => 'cyan',
-            'url' => '#',
-        ],
     ],
+    ['header' => 'labels'],
+    [
+        'text' => 'important',
+        'icon_color' => 'red',
+        'url' => '#',
+    ],
+    [
+        'text' => 'warning',
+        'icon_color' => 'yellow',
+        'url' => '#',
+    ],
+    [
+        'text' => 'information',
+        'icon_color' => 'cyan',
+        'url' => '#',
+    ],
+],
 
 
     /*
@@ -329,14 +325,14 @@ return [
     */
 
     'filters' => [
-        JeroenNoten\LaravelAdminLte\Menu\Filters\GateFilter::class,
-        JeroenNoten\LaravelAdminLte\Menu\Filters\HrefFilter::class,
-        JeroenNoten\LaravelAdminLte\Menu\Filters\SearchFilter::class,
-        JeroenNoten\LaravelAdminLte\Menu\Filters\ActiveFilter::class,
-        JeroenNoten\LaravelAdminLte\Menu\Filters\ClassesFilter::class,
-        JeroenNoten\LaravelAdminLte\Menu\Filters\LangFilter::class,
-        JeroenNoten\LaravelAdminLte\Menu\Filters\DataFilter::class,
-    ],
+    JeroenNoten\LaravelAdminLte\Menu\Filters\GateFilter::class,
+    JeroenNoten\LaravelAdminLte\Menu\Filters\HrefFilter::class,
+    JeroenNoten\LaravelAdminLte\Menu\Filters\SearchFilter::class,
+    JeroenNoten\LaravelAdminLte\Menu\Filters\ActiveFilter::class,
+    JeroenNoten\LaravelAdminLte\Menu\Filters\ClassesFilter::class,
+    JeroenNoten\LaravelAdminLte\Menu\Filters\LangFilter::class,
+    JeroenNoten\LaravelAdminLte\Menu\Filters\DataFilter::class,
+],
 
     /*
     |--------------------------------------------------------------------------
@@ -351,77 +347,87 @@ return [
     */
 
     'plugins' => [
-        'Datatables' => [
-            'active' => false,
-            'files' => [
-                [
-                    'type' => 'js',
-                    'asset' => false,
-                    'location' => '//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js',
-                ],
-                [
-                    'type' => 'js',
-                    'asset' => false,
-                    'location' => '//cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js',
-                ],
-                [
-                    'type' => 'css',
-                    'asset' => false,
-                    'location' => '//cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css',
-                ],
+    'Datatables' => [
+        'active' => false,
+        'files' => [
+            [
+                'type' => 'js',
+                'asset' => false,
+                'location' => '//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js',
             ],
-        ],
-        'Select2' => [
-            'active' => false,
-            'files' => [
-                [
-                    'type' => 'js',
-                    'asset' => false,
-                    'location' => '//cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js',
-                ],
-                [
-                    'type' => 'css',
-                    'asset' => false,
-                    'location' => '//cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.css',
-                ],
+            [
+                'type' => 'js',
+                'asset' => false,
+                'location' => '//cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js',
             ],
-        ],
-        'Chartjs' => [
-            'active' => false,
-            'files' => [
-                [
-                    'type' => 'js',
-                    'asset' => false,
-                    'location' => '//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js',
-                ],
-            ],
-        ],
-        'Sweetalert2' => [
-            'active' => false,
-            'files' => [
-                [
-                    'type' => 'js',
-                    'asset' => false,
-                    'location' => '//cdn.jsdelivr.net/npm/sweetalert2@8',
-                ],
-            ],
-        ],
-        'Pace' => [
-            'active' => false,
-            'files' => [
-                [
-                    'type' => 'css',
-                    'asset' => false,
-                    'location' => '//cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/blue/pace-theme-center-radar.min.css',
-                ],
-                [
-                    'type' => 'js',
-                    'asset' => false,
-                    'location' => '//cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js',
-                ],
+            [
+                'type' => 'css',
+                'asset' => false,
+                'location' => '//cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css',
             ],
         ],
     ],
+    'Select2' => [
+        'active' => false,
+        'files' => [
+            [
+                'type' => 'js',
+                'asset' => false,
+                'location' => '//cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js',
+            ],
+            [
+                'type' => 'css',
+                'asset' => false,
+                'location' => '//cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.css',
+            ],
+        ],
+    ],
+    'Chartjs' => [
+        'active' => false,
+        'files' => [
+            [
+                'type' => 'js',
+                'asset' => false,
+                'location' => '//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js',
+            ],
+        ],
+    ],
+    'Sweetalert2' => [
+        'active' => false,
+        'files' => [
+            [
+                'type' => 'js',
+                'asset' => false,
+                'location' => '//cdn.jsdelivr.net/npm/sweetalert2@8',
+            ],
+        ],
+    ],
+    'Pace' => [
+        'active' => false,
+        'files' => [
+            [
+                'type' => 'css',
+                'asset' => false,
+                'location' => '//cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/blue/pace-theme-center-radar.min.css',
+            ],
+            [
+                'type' => 'js',
+                'asset' => false,
+                'location' => '//cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js',
+            ],
+        ],
+    ],
+        'bsCustomFileInput' => [
+            'active' => true,
+            'files' => [
+                [
+                    'type' => 'js',
+                    'asset' => true,
+                    'location' => 'vendor/bs-custom-file-input/bs-custom-file-input.min.js',
+                ],
+            ],
+        ],
+],
 
     /*
     |--------------------------------------------------------------------------
@@ -437,24 +443,24 @@ return [
     */
 
     'iframe' => [
-        'default_tab' => [
-            'url' => null,
-            'title' => null,
-        ],
-        'buttons' => [
-            'close' => true,
-            'close_all' => true,
-            'close_all_other' => true,
-            'scroll_left' => true,
-            'scroll_right' => true,
-            'fullscreen' => true,
-        ],
-        'options' => [
-            'loading_screen' => 1000,
-            'auto_show_new_tab' => true,
-            'use_navbar_items' => true,
-        ],
+    'default_tab' => [
+        'url' => null,
+        'title' => null,
     ],
+    'buttons' => [
+        'close' => true,
+        'close_all' => true,
+        'close_all_other' => true,
+        'scroll_left' => true,
+        'scroll_right' => true,
+        'fullscreen' => true,
+    ],
+    'options' => [
+        'loading_screen' => 1000,
+        'auto_show_new_tab' => true,
+        'use_navbar_items' => true,
+    ],
+],
 
     /*
     |--------------------------------------------------------------------------

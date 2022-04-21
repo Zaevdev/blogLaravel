@@ -10,7 +10,7 @@ class Post extends Model
 {
     use HasFactory;
 
-    //use SoftDeletes;
+    use SoftDeletes;
 
     protected $table = 'posts'; // явная привязка к таблице
     protected $guarded = false; // чтобы изменять данные в таблице

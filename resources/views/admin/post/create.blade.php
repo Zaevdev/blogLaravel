@@ -1,6 +1,8 @@
 @extends('adminlte::page')
 @section('title', 'Posts')
+@section('plugins.Select2', true)
 @section('content_header')
+
     <x-head.tinymce-config/>
     <h1>Adding a post</h1>
 @stop
@@ -46,6 +48,23 @@
                     <h5><i class="icon fas fa-ban"></i>{{$message}}</h5>
                 </div>
                 @enderror
+                @php
+                    $config = [
+                        "placeholder" => "Select multiple tags...",
+                        "allowClear" => true,
+                    ];
+                @endphp
+                <x-adminlte-select2 id="tags_id" name="tags_id[]" label="Tags" igroup-size="sm"
+                                    :config="$config" multiple>
+                    <x-slot name="prependSlot">
+                        <div class="input-group-text bg-gradient-blue">
+                            <i class="fas fa-tag"></i>
+                        </div>
+                    </x-slot>
+                    @foreach($tags as $tag)
+                        <option value="{{$tag->id}}" {{$tag->id == old('tags_id') ? 'selected' : ''}}>{{$tag->title}}</option>
+                    @endforeach
+                </x-adminlte-select2>
                 <x-adminlte-input-file name="preview_image" igroup-size="sm" placeholder="Choose a image..."
                                        label="Preview image">
                     <x-slot name="prependSlot">
@@ -65,12 +84,13 @@
                 <div class="card-footer">
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
+            </div>
         </form>
     </div>
 @stop
 @section('css')
-    <link rel="stylesheet" href="/css/admin_custom.css">
+
 @stop
 @section('js')
-    <script> console.log('Hi!'); </script>
+
 @stop

@@ -10,6 +10,7 @@ class IndexController extends Controller
     public function __invoke()
     {
         $tags = Tag::all()->sortBy('id');
+
         return view('admin.tag.index', compact('tags'));
     }
 }

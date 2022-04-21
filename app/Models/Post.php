@@ -9,8 +9,14 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Post extends Model
 {
     use HasFactory;
+
     //use SoftDeletes;
 
     protected $table = 'posts'; // явная привязка к таблице
     protected $guarded = false; // чтобы изменять данные в таблице
+
+    public function tags(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
+    {
+        return $this->belongsToMany(Tag::class, 'post_tags', 'post_id', 'tag_id');
+    }
 }

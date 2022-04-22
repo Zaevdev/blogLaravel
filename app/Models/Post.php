@@ -21,8 +21,6 @@ class Post extends Model
         'category_id',
         'main_image',
         'preview_image',
-        'tags_count',
-        'updated_at',
     ];
 
     public function tags(): BelongsToMany

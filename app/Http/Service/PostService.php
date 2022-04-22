@@ -5,6 +5,7 @@ namespace App\Http\Service;
 use App\Models\Post;
 use Illuminate\Support\Facades\DB;
 use Psr\Log\LoggerInterface;
+use Throwable;
 
 class PostService
 {
@@ -33,7 +34,7 @@ class PostService
             Db::commit();
 
             return $post;
-        } catch (\Throwable $exception) {
+        } catch (Throwable $exception) {
             Db::rollBack();
             $this->logger->error($exception->getMessage());
 

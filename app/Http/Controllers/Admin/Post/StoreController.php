@@ -17,7 +17,7 @@ class StoreController extends Controller
 
     public function __invoke(StoreRequest $request)
     {
-        $this->service->storeOrUpdate($request->all());
+        $this->service->storeOrUpdate($request->validated());
 
         return redirect()->route('admin.post.index');
     }

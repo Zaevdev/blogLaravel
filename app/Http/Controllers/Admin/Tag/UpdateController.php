@@ -10,9 +10,7 @@ class UpdateController extends Controller
 {
     public function __invoke(UpdateRequest $request, Tag $tag)
     {
-        $data = $request->validated();
-
-        $tag->update($data);
+        $tag->update($request->validated());
 
         return view('admin.tag.show', compact('tag'));
     }

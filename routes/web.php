@@ -1,6 +1,15 @@
 <?php
 
-use App\Http\Controllers\Admin\Category\{CreateController, IndexController};
+use App\Http\Controllers\Admin\Category\{
+    CreateController,
+    DeleteController,
+    EditController,
+    IndexController,
+    ShowController,
+    StoreController,
+    UpdateController
+};
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,22 +32,14 @@ Route::prefix('admin')->middleware('role:admin')->group(function () {
     Route::prefix('categories')->group(function () {
         Route::get('/', IndexController::class)->name('admin.categories.index');
         Route::get('/create', CreateController::class)->name('admin.categories.create');
-        Route::post('/', \App\Http\Controllers\Admin\Category\StoreController::class)->name('admin.categories.store');
-        Route::get('/{category}', \App\Http\Controllers\Admin\Category\ShowController::class)->name(
-            'admin.categories.show'
-        );
-        Route::get('/{category}/edit', \App\Http\Controllers\Admin\Category\EditController::class)->name(
-            'admin.categories.edit'
-        );
-        Route::patch('/{category}', \App\Http\Controllers\Admin\Category\UpdateController::class)->name(
-            'admin.categories.update'
-        );
-        Route::delete('/{category}', \App\Http\Controllers\Admin\Category\DeleteController::class)->name(
-            'admin.categories.delete'
-        );
+        Route::post('/', StoreController::class)->name('admin.categories.store');
+        Route::get('/{category}', ShowController::class)->name('admin.categories.show');
+        Route::get('/{category}/edit', EditController::class)->name('admin.categories.edit');
+        Route::patch('/{category}', UpdateController::class)->name('admin.categories.update');
+        Route::delete('/{category}', DeleteController::class)->name('admin.categories.delete');
     });
     Route::prefix('tags')->group(function () {
-        Route::get('/', \App\Http\Controllers\Admin\Tag\IndexController::class)->name('admin.tag.index');
+        Route::get('/', IndexController::class)->name('admin.tag.index');
         Route::get('/create', \App\Http\Controllers\Admin\Tag\CreateController::class)->name('admin.tag.create');
         Route::post('/', \App\Http\Controllers\Admin\Tag\StoreController::class)->name('admin.tag.store');
         Route::get('/{tag}', \App\Http\Controllers\Admin\Tag\ShowController::class)->name('admin.tag.show');

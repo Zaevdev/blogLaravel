@@ -13,4 +13,8 @@ class Tag extends Model
 
     protected $table = 'tags'; // явная привязка к таблице
     protected $guarded = false; // чтобы изменять данные в таблице
+
+    protected $fillable = [
+        'title',
+    ];
 }

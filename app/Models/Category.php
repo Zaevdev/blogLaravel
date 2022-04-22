@@ -13,4 +13,8 @@ class Category extends Model
 
     protected $table = 'categories'; // явная привязка к таблице
     protected $guarded = false; // чтобы изменять данные в таблице
+
+    protected $fillable = [
+        'title',
+    ];
 }

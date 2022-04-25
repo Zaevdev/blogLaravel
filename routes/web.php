@@ -9,7 +9,6 @@ use App\Http\Controllers\Admin\Category\{
     StoreController,
     UpdateController
 };
-
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,7 +26,7 @@ Route::prefix('/')->group(function () {
     Route::get('/', \App\Http\Controllers\Blog\IndexController::class)->name('blog.index');
 });
 
-Route::prefix('admin')->middleware('role:admin')->group(function () {
+Route::prefix('admin')->middleware(['auth', 'role:admin', 'verified'])->group(function () {
     Route::get('/', \App\Http\Controllers\Admin\Blog\IndexController::class)->name('admin.blog.index');
     Route::prefix('categories')->group(function () {
         Route::get('/', IndexController::class)->name('admin.categories.index');
@@ -39,7 +38,7 @@ Route::prefix('admin')->middleware('role:admin')->group(function () {
         Route::delete('/{category}', DeleteController::class)->name('admin.categories.delete');
     });
     Route::prefix('tags')->group(function () {
-        Route::get('/', IndexController::class)->name('admin.tag.index');
+        Route::get('/', \App\Http\Controllers\Admin\Tag\IndexController::class)->name('admin.tag.index');
         Route::get('/create', \App\Http\Controllers\Admin\Tag\CreateController::class)->name('admin.tag.create');
         Route::post('/', \App\Http\Controllers\Admin\Tag\StoreController::class)->name('admin.tag.store');
         Route::get('/{tag}', \App\Http\Controllers\Admin\Tag\ShowController::class)->name('admin.tag.show');
@@ -68,6 +67,6 @@ Route::prefix('admin')->middleware('role:admin')->group(function () {
 });
 
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

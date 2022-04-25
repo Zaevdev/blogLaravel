@@ -93,6 +93,29 @@ trait HasRolesAndPermissions
     }
 
     /**
+     * @param array $roles
+     * @return mixed
+     */
+    public function getAllRoles(array $roles): mixed
+    {
+        return Permission::all()->whereIn('slug', $roles);
+    }
+
+    /**
+     * @param mixed ...$roles
+     * @return $this
+     */
+    public function giveRolesTo(...$roles): static
+    {
+        $roles = $this->getAllRoles($roles);
+        if ($roles === null) {
+            return $this;
+        }
+        $this->roles()->saveMany($roles);
+        return $this;
+    }
+
+    /**
      * @param mixed ...$permissions
      * @return $this
      */

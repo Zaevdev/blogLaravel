@@ -2,9 +2,7 @@
 
 namespace App\Providers;
 
-use App\Models\Category;
-use App\Models\Post;
-use App\Models\Tag;
+use App\Models\{Category, Post, Tag, User};
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -56,9 +54,16 @@ class EventServiceProvider extends ServiceProvider
                 'label' => Tag::all()->count(),
                 'label_color' => 'success',
             ]);
+            $event->menu->addAfter('tags', [
+                'key' => 'users',
+                'text' => 'Users',
+                'route' => 'admin.user.index',
+                'icon' => 'far fa-fw fa fa-users',
+                'label' => User::all()->count(),
+                'label_color' => 'success',
+            ]);
         });
     }
-
     /**
      * Determine if events and listeners should be automatically discovered.
      *

@@ -18,7 +18,7 @@ class UpdateController extends Controller
 
     public function __invoke(UpdateRequest $request, Post $post)
     {
-        $post = $this->service->storeOrUpdate($request->all(), $post->id);
+        $post = $this->service->storeOrUpdate($request->validated(), $post->id);
 
         return view('admin.post.show', compact('post'));
     }

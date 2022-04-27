@@ -23,7 +23,7 @@ class PostService
     {
         try {
             Db::beginTransaction();
-            $this->setImage($data);
+            $data = $this->setImage($data);
 
             $post = Post::updateOrCreate([
                 'id' => $postId,
@@ -35,7 +35,11 @@ class PostService
 
             return $post;
         } catch (Throwable $exception) {
-            Db::rollBack();
+            try {
+                Db::rollBack();
+            } catch (Throwable $exception) {
+                abort(500);
+            }
             $this->logger->error($exception->getMessage());
 
             abort(500);

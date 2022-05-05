@@ -7,7 +7,6 @@
     <h1>Edit a post</h1>
 @stop
 @section('content')
-
     <div class="card card-primary">
         <form action="{{route('admin.post.update', $post->id)}}" method="POST" enctype="multipart/form-data">
             @csrf

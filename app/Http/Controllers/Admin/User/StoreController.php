@@ -4,9 +4,9 @@ namespace App\Http\Controllers\Admin\User;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Admin\User\StoreRequest;
-use App\Models\User;
-use Illuminate\Auth\Events\Registered;
+use App\Jobs\StoreOrUpdateUserJob;
 use Illuminate\Support\Facades\Hash;
+
 
 class StoreController extends Controller
 {
@@ -14,16 +14,9 @@ class StoreController extends Controller
     public function __invoke(StoreRequest $request)
     {
         $data = $request->validated();
+        $data['password'] = Hash::make($data['password']);
 
-        event(
-            new Registered(
-                User::firstOrCreate([
-                    'name' => $data['name'],
-                    'email' => $data['email'],
-                    'password' => Hash::make($data['password']),
-                ])->giveRolesTo('user')
-            )
-        );
+        StoreOrUpdateUserJob::dispatch($data);
 
         return redirect()->route('admin.user.index');
     }

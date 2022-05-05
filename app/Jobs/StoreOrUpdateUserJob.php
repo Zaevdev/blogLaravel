@@ -40,11 +40,9 @@ class StoreOrUpdateUserJob implements ShouldQueue
     {
         event(
             new Registered(
-                User::firstOrCreate([
-                    'name' => $this->data['name'],
-                    'email' => $this->data['email'],
-                    'password' => Hash::make($this->data['password']),
-                ])->giveRolesTo('user')
+                User::updateOrCreate([
+                    'id' => $this->data['user_id'] ?? null,
+                ], $this->data)
             )
         );
     }

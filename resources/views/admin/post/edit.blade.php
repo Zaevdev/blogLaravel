@@ -7,7 +7,6 @@
     <h1>Edit a post</h1>
 @stop
 @section('content')
-
     <div class="card card-primary">
         <form action="{{route('admin.post.update', $post->id)}}" method="POST" enctype="multipart/form-data">
             @csrf
@@ -30,7 +29,7 @@
                     <select class="form-control" name="category_id">
                         <option selected disabled>Choose one</option>
                         @foreach($categories as $category)
-                            <option value="{{$category->id}}" {{$category->id == $post->category_id ? 'selected' : ''}}>{{$category->title}}</option>
+                            <option value="{{$category->id}}" {{$category->id === $post->category_id ? 'selected' : ''}}>{{$category->title}}</option>
                         @endforeach
                     </select>
                 </div>
@@ -63,7 +62,7 @@
                         </div>
                     </x-slot>
                     @foreach($tags as $tag)
-                        <option value="{{$tag->id}}" {{in_array($tag->id, $post->tags ->pluck('id')->toArray()) ? 'selected' : ''}}>{{$tag->title}}</option>
+                        <option value="{{$tag->id}}" {{in_array($tag->id, $post->tags ->pluck('id')->toArray(), true) ? 'selected' : ''}}>{{$tag->title}}</option>
                     @endforeach
                 </x-adminlte-select2>
                 @if(isset($post->preview_image))

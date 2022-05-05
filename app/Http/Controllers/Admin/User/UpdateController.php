@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin\User;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Admin\User\UpdateRequest;
+use App\Jobs\StoreOrUpdateUserJob;
 use App\Models\User;
 
 class UpdateController extends Controller
@@ -12,7 +13,7 @@ class UpdateController extends Controller
     {
         $data = $request->validated();
 
-        $user->update($data);
+        StoreOrUpdateUserJob::dispatch($data);
 
         return view('admin.user.show', compact('user'));
     }

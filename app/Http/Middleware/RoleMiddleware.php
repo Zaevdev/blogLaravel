@@ -17,16 +17,14 @@ class RoleMiddleware
      */
     public function handle($request, Closure $next, $role, $permission = null): mixed
     {
-        if (Auth::guest()) {
-            abort(404);
-        }
+//        if (Auth::guest()) {
+//            abort(404);
+//        }
 
         if (!Auth::user()->hasRole($role)) {
-            abort(404);
+            return redirect('/');
         }
-        if ($permission !== null && !Auth::user()->can($permission)) {
-            abort(404);
-        }
+
         return $next($request);
     }
 }

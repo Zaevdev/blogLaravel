@@ -15,6 +15,7 @@
     "laravel/sanctum": "^2.14.1",
     "laravel/tinker": "^2.7",
     "laravel/ui": "^3.4",
+    "socialiteproviders/vkontakte": "^4.2",
     "tinymce/tinymce": "^6.0"
   },
   "require-dev": {

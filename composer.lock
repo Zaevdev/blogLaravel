@@ -4,7 +4,7 @@
     "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
     "This file is @generated automatically"
   ],
-  "content-hash": "f36ba06fde14c6efc6bce8b61df2696c",
+  "content-hash": "d58e922a05ce857d93978485811d1121",
   "packages": [
     {
       "name": "almasaeed2010/adminlte",
@@ -15,26 +15,26 @@
         "reference": "bd4d9c72931f1dd28601b6bfb387554a381ad540"
       },
       "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ColorlibHQ/AdminLTE/zipball/bd4d9c72931f1dd28601b6bfb387554a381ad540",
-                "reference": "bd4d9c72931f1dd28601b6bfb387554a381ad540",
-                "shasum": ""
-            },
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Colorlib"
-                }
-            ],
-            "description": "AdminLTE - admin control panel and dashboard that's based on Bootstrap 4",
-            "homepage": "https://adminlte.io/",
-            "keywords": [
-                "JS",
-                "admin",
+        "type": "zip",
+        "url": "https://api.github.com/repos/ColorlibHQ/AdminLTE/zipball/bd4d9c72931f1dd28601b6bfb387554a381ad540",
+        "reference": "bd4d9c72931f1dd28601b6bfb387554a381ad540",
+        "shasum": ""
+      },
+      "type": "library",
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Colorlib"
+        }
+      ],
+      "description": "AdminLTE - admin control panel and dashboard that's based on Bootstrap 4",
+      "homepage": "https://adminlte.io/",
+      "keywords": [
+        "JS",
+        "admin",
                 "back-end",
                 "css",
                 "less",
@@ -1282,43 +1282,112 @@
                     "email": "taylor@laravel.com"
                 },
                 {
-                    "name": "Nuno Maduro",
-                    "email": "nuno@laravel.com"
+                  "name": "Nuno Maduro",
+                  "email": "nuno@laravel.com"
                 }
             ],
-            "description": "Laravel Serializable Closure provides an easy and secure way to serialize closures in PHP.",
-            "keywords": [
-                "closure",
-                "laravel",
-                "serializable"
-            ],
-            "support": {
-                "issues": "https://github.com/laravel/serializable-closure/issues",
-                "source": "https://github.com/laravel/serializable-closure"
-            },
-            "time": "2022-02-11T19:23:53+00:00"
+          "description": "Laravel Serializable Closure provides an easy and secure way to serialize closures in PHP.",
+          "keywords": [
+            "closure",
+            "laravel",
+            "serializable"
+          ],
+          "support": {
+            "issues": "https://github.com/laravel/serializable-closure/issues",
+            "source": "https://github.com/laravel/serializable-closure"
+          },
+          "time": "2022-02-11T19:23:53+00:00"
         },
+    {
+      "name": "laravel/socialite",
+      "version": "v5.5.2",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/laravel/socialite.git",
+        "reference": "68afb03259b82d898c68196cbcacd48596a9dd72"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/laravel/socialite/zipball/68afb03259b82d898c68196cbcacd48596a9dd72",
+        "reference": "68afb03259b82d898c68196cbcacd48596a9dd72",
+        "shasum": ""
+      },
+      "require": {
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^6.0|^7.0",
+        "illuminate/http": "^6.0|^7.0|^8.0|^9.0",
+        "illuminate/support": "^6.0|^7.0|^8.0|^9.0",
+        "league/oauth1-client": "^1.0",
+        "php": "^7.2|^8.0"
+      },
+      "require-dev": {
+        "illuminate/contracts": "^6.0|^7.0|^8.0|^9.0",
+        "mockery/mockery": "^1.0",
+        "orchestra/testbench": "^4.0|^5.0|^6.0|^7.0",
+        "phpunit/phpunit": "^8.0|^9.3"
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "5.x-dev"
+        },
+        "laravel": {
+          "providers": [
+            "Laravel\\Socialite\\SocialiteServiceProvider"
+          ],
+          "aliases": {
+            "Socialite": "Laravel\\Socialite\\Facades\\Socialite"
+          }
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "Laravel\\Socialite\\": "src/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
         {
-            "name": "laravel/tinker",
-            "version": "v2.7.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laravel/tinker.git",
-                "reference": "dff39b661e827dae6e092412f976658df82dbac5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laravel/tinker/zipball/dff39b661e827dae6e092412f976658df82dbac5",
-                "reference": "dff39b661e827dae6e092412f976658df82dbac5",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/console": "^6.0|^7.0|^8.0|^9.0",
-                "illuminate/contracts": "^6.0|^7.0|^8.0|^9.0",
-                "illuminate/support": "^6.0|^7.0|^8.0|^9.0",
-                "php": "^7.2.5|^8.0",
-                "psy/psysh": "^0.10.4|^0.11.1",
-                "symfony/var-dumper": "^4.3.4|^5.0|^6.0"
+          "name": "Taylor Otwell",
+          "email": "taylor@laravel.com"
+        }
+      ],
+      "description": "Laravel wrapper around OAuth 1 & OAuth 2 libraries.",
+      "homepage": "https://laravel.com",
+      "keywords": [
+        "laravel",
+        "oauth"
+      ],
+      "support": {
+        "issues": "https://github.com/laravel/socialite/issues",
+        "source": "https://github.com/laravel/socialite"
+      },
+      "time": "2022-03-10T15:26:19+00:00"
+    },
+    {
+      "name": "laravel/tinker",
+      "version": "v2.7.2",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/laravel/tinker.git",
+        "reference": "dff39b661e827dae6e092412f976658df82dbac5"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/laravel/tinker/zipball/dff39b661e827dae6e092412f976658df82dbac5",
+        "reference": "dff39b661e827dae6e092412f976658df82dbac5",
+        "shasum": ""
+      },
+      "require": {
+        "illuminate/console": "^6.0|^7.0|^8.0|^9.0",
+        "illuminate/contracts": "^6.0|^7.0|^8.0|^9.0",
+        "illuminate/support": "^6.0|^7.0|^8.0|^9.0",
+        "php": "^7.2.5|^8.0",
+        "psy/psysh": "^0.10.4|^0.11.1",
+        "symfony/var-dumper": "^4.3.4|^5.0|^6.0"
             },
             "require-dev": {
                 "mockery/mockery": "~1.3.3|^1.4.2",
@@ -1750,38 +1819,114 @@
                 "source": "https://github.com/thephpleague/mime-type-detection/tree/1.11.0"
             },
             "funding": [
-                {
-                    "url": "https://github.com/frankdejonge",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/league/flysystem",
-                    "type": "tidelift"
-                }
+              {
+                "url": "https://github.com/frankdejonge",
+                "type": "github"
+              },
+              {
+                "url": "https://tidelift.com/funding/github/packagist/league/flysystem",
+                "type": "tidelift"
+              }
             ],
-            "time": "2022-04-17T13:12:02+00:00"
+          "time": "2022-04-17T13:12:02+00:00"
         },
+    {
+      "name": "league/oauth1-client",
+      "version": "v1.10.1",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/thephpleague/oauth1-client.git",
+        "reference": "d6365b901b5c287dd41f143033315e2f777e1167"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/thephpleague/oauth1-client/zipball/d6365b901b5c287dd41f143033315e2f777e1167",
+        "reference": "d6365b901b5c287dd41f143033315e2f777e1167",
+        "shasum": ""
+      },
+      "require": {
+        "ext-json": "*",
+        "ext-openssl": "*",
+        "guzzlehttp/guzzle": "^6.0|^7.0",
+        "guzzlehttp/psr7": "^1.7|^2.0",
+        "php": ">=7.1||>=8.0"
+      },
+      "require-dev": {
+        "ext-simplexml": "*",
+        "friendsofphp/php-cs-fixer": "^2.17",
+        "mockery/mockery": "^1.3.3",
+        "phpstan/phpstan": "^0.12.42",
+        "phpunit/phpunit": "^7.5||9.5"
+      },
+      "suggest": {
+        "ext-simplexml": "For decoding XML-based responses."
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "1.0-dev",
+          "dev-develop": "2.0-dev"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "League\\OAuth1\\Client\\": "src/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
         {
-            "name": "monolog/monolog",
-            "version": "2.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "4192345e260f1d51b365536199744b987e160edc"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/4192345e260f1d51b365536199744b987e160edc",
-                "reference": "4192345e260f1d51b365536199744b987e160edc",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.2",
-                "psr/log": "^1.0.1 || ^2.0 || ^3.0"
-            },
-            "provide": {
-                "psr/log-implementation": "1.0.0 || 2.0.0 || 3.0.0"
-            },
+          "name": "Ben Corlett",
+          "email": "bencorlett@me.com",
+          "homepage": "http://www.webcomm.com.au",
+          "role": "Developer"
+        }
+      ],
+      "description": "OAuth 1.0 Client Library",
+      "keywords": [
+        "Authentication",
+        "SSO",
+        "authorization",
+        "bitbucket",
+        "identity",
+        "idp",
+        "oauth",
+        "oauth1",
+        "single sign on",
+        "trello",
+        "tumblr",
+        "twitter"
+      ],
+      "support": {
+        "issues": "https://github.com/thephpleague/oauth1-client/issues",
+        "source": "https://github.com/thephpleague/oauth1-client/tree/v1.10.1"
+      },
+      "time": "2022-04-15T14:02:14+00:00"
+    },
+    {
+      "name": "monolog/monolog",
+      "version": "2.5.0",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/Seldaek/monolog.git",
+        "reference": "4192345e260f1d51b365536199744b987e160edc"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/Seldaek/monolog/zipball/4192345e260f1d51b365536199744b987e160edc",
+        "reference": "4192345e260f1d51b365536199744b987e160edc",
+        "shasum": ""
+      },
+      "require": {
+        "php": ">=7.2",
+        "psr/log": "^1.0.1 || ^2.0 || ^3.0"
+      },
+      "provide": {
+        "psr/log-implementation": "1.0.0 || 2.0.0 || 3.0.0"
+      },
             "require-dev": {
                 "aws/aws-sdk-php": "^2.4.9 || ^3.0",
                 "doctrine/couchdb": "~1.0@dev",
@@ -2878,38 +3023,162 @@
                 "source": "https://github.com/ramsey/uuid/tree/4.3.1"
             },
             "funding": [
-                {
-                    "url": "https://github.com/ramsey",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/ramsey/uuid",
-                    "type": "tidelift"
-                }
+              {
+                "url": "https://github.com/ramsey",
+                "type": "github"
+              },
+              {
+                "url": "https://tidelift.com/funding/github/packagist/ramsey/uuid",
+                "type": "tidelift"
+              }
             ],
-            "time": "2022-03-27T21:42:02+00:00"
+          "time": "2022-03-27T21:42:02+00:00"
+        },
+    {
+      "name": "socialiteproviders/manager",
+      "version": "v4.1.0",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/SocialiteProviders/Manager.git",
+        "reference": "4e63afbd26dc45ff263591de2a0970436a6a0bf9"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/SocialiteProviders/Manager/zipball/4e63afbd26dc45ff263591de2a0970436a6a0bf9",
+        "reference": "4e63afbd26dc45ff263591de2a0970436a6a0bf9",
+        "shasum": ""
+      },
+      "require": {
+        "illuminate/support": "^6.0 || ^7.0 || ^8.0 || ^9.0",
+        "laravel/socialite": "~4.0 || ~5.0",
+        "php": "^7.2 || ^8.0"
+      },
+      "require-dev": {
+        "mockery/mockery": "^1.2",
+        "phpunit/phpunit": "^6.0 || ^9.0"
+      },
+      "type": "library",
+      "extra": {
+        "laravel": {
+          "providers": [
+            "SocialiteProviders\\Manager\\ServiceProvider"
+          ]
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "SocialiteProviders\\Manager\\": "src/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Andy Wendt",
+          "email": "andy@awendt.com"
         },
         {
-            "name": "symfony/console",
-            "version": "v6.0.7",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/console.git",
-                "reference": "70dcf7b2ca2ea08ad6ebcc475f104a024fb5632e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/70dcf7b2ca2ea08ad6ebcc475f104a024fb5632e",
-                "reference": "70dcf7b2ca2ea08ad6ebcc475f104a024fb5632e",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=8.0.2",
-                "symfony/polyfill-mbstring": "~1.0",
-                "symfony/service-contracts": "^1.1|^2|^3",
-                "symfony/string": "^5.4|^6.0"
-            },
-            "conflict": {
+          "name": "Anton Komarev",
+          "email": "a.komarev@cybercog.su"
+        },
+        {
+          "name": "Miguel Piedrafita",
+          "email": "soy@miguelpiedrafita.com"
+        },
+        {
+          "name": "atymic",
+          "email": "atymicq@gmail.com",
+          "homepage": "https://atymic.dev"
+        }
+      ],
+      "description": "Easily add new or override built-in providers in Laravel Socialite.",
+      "homepage": "https://socialiteproviders.com",
+      "keywords": [
+        "laravel",
+        "manager",
+        "oauth",
+        "providers",
+        "socialite"
+      ],
+      "support": {
+        "issues": "https://github.com/socialiteproviders/manager/issues",
+        "source": "https://github.com/socialiteproviders/manager"
+      },
+      "time": "2022-01-23T22:40:23+00:00"
+    },
+    {
+      "name": "socialiteproviders/vkontakte",
+      "version": "4.2.2",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/SocialiteProviders/VKontakte.git",
+        "reference": "8bfbe64cb43f99f56b59d0aec2dccfae29b2de4f"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/SocialiteProviders/VKontakte/zipball/8bfbe64cb43f99f56b59d0aec2dccfae29b2de4f",
+        "reference": "8bfbe64cb43f99f56b59d0aec2dccfae29b2de4f",
+        "shasum": ""
+      },
+      "require": {
+        "ext-json": "*",
+        "php": "^7.2 || ^8.0",
+        "socialiteproviders/manager": "~4.0"
+      },
+      "type": "library",
+      "autoload": {
+        "psr-4": {
+          "SocialiteProviders\\VKontakte\\": ""
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Brian Faust",
+          "email": "hello@brianfaust.de"
+        }
+      ],
+      "description": "VKontakte OAuth2 Provider for Laravel Socialite",
+      "keywords": [
+        "laravel",
+        "oauth",
+        "provider",
+        "socialite",
+        "vkontakte"
+      ],
+      "support": {
+        "docs": "https://socialiteproviders.com/vkontakte",
+        "issues": "https://github.com/socialiteproviders/providers/issues",
+        "source": "https://github.com/socialiteproviders/providers"
+      },
+      "time": "2021-09-01T23:20:55+00:00"
+    },
+    {
+      "name": "symfony/console",
+      "version": "v6.0.7",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/symfony/console.git",
+        "reference": "70dcf7b2ca2ea08ad6ebcc475f104a024fb5632e"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/symfony/console/zipball/70dcf7b2ca2ea08ad6ebcc475f104a024fb5632e",
+        "reference": "70dcf7b2ca2ea08ad6ebcc475f104a024fb5632e",
+        "shasum": ""
+      },
+      "require": {
+        "php": ">=8.0.2",
+        "symfony/polyfill-mbstring": "~1.0",
+        "symfony/service-contracts": "^1.1|^2|^3",
+        "symfony/string": "^5.4|^6.0"
+      },
+      "conflict": {
                 "symfony/dependency-injection": "<5.4",
                 "symfony/dotenv": "<5.4",
                 "symfony/event-dispatcher": "<5.4",
@@ -5400,26 +5669,26 @@
         "dist": {
           "type": "zip",
           "url": "https://api.github.com/repos/barryvdh/laravel-ide-helper/zipball/3ba1e2573b38f72107b8aacc4ee177fcab30a550",
-                "reference": "3ba1e2573b38f72107b8aacc4ee177fcab30a550",
-                "shasum": ""
-            },
-            "require": {
-                "barryvdh/reflection-docblock": "^2.0.6",
-                "composer/pcre": "^1 || ^2 || ^3",
-                "doctrine/dbal": "^2.6 || ^3",
-                "ext-json": "*",
-                "illuminate/console": "^8 || ^9",
-                "illuminate/filesystem": "^8 || ^9",
-                "illuminate/support": "^8 || ^9",
-                "nikic/php-parser": "^4.7",
-                "php": "^7.3 || ^8.0",
-                "phpdocumentor/type-resolver": "^1.1.0"
-            },
-            "require-dev": {
-                "ext-pdo_sqlite": "*",
-                "friendsofphp/php-cs-fixer": "^2",
-                "illuminate/config": "^8 || ^9",
-                "illuminate/view": "^8 || ^9",
+          "reference": "3ba1e2573b38f72107b8aacc4ee177fcab30a550",
+          "shasum": ""
+        },
+        "require": {
+          "barryvdh/reflection-docblock": "^2.0.6",
+          "composer/pcre": "^1 || ^2 || ^3",
+          "doctrine/dbal": "^2.6 || ^3",
+          "ext-json": "*",
+          "illuminate/console": "^8 || ^9",
+          "illuminate/filesystem": "^8 || ^9",
+          "illuminate/support": "^8 || ^9",
+          "nikic/php-parser": "^4.7",
+          "php": "^7.3 || ^8.0",
+          "phpdocumentor/type-resolver": "^1.1.0"
+        },
+        "require-dev": {
+          "ext-pdo_sqlite": "*",
+          "friendsofphp/php-cs-fixer": "^2",
+          "illuminate/config": "^8 || ^9",
+          "illuminate/view": "^8 || ^9",
                 "mockery/mockery": "^1.4",
                 "orchestra/testbench": "^6 || ^7",
                 "phpunit/phpunit": "^8.5 || ^9",
@@ -6304,21 +6573,21 @@
                     "Laravel\\Sail\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
-                }
-            ],
-            "description": "Docker files for running a basic Laravel application.",
-            "keywords": [
-              "docker",
-              "laravel"
-            ],
+          "notification-url": "https://packagist.org/downloads/",
+          "license": [
+            "MIT"
+          ],
+          "authors": [
+            {
+              "name": "Taylor Otwell",
+              "email": "taylor@laravel.com"
+            }
+          ],
+          "description": "Docker files for running a basic Laravel application.",
+          "keywords": [
+            "docker",
+            "laravel"
+          ],
           "support": {
             "issues": "https://github.com/laravel/sail/issues",
             "source": "https://github.com/laravel/sail"
@@ -6402,26 +6671,26 @@
         "dist": {
           "type": "zip",
           "url": "https://api.github.com/repos/mockery/mockery/zipball/c10a5f6e06fc2470ab1822fa13fa2a7380f8fbac",
-                "reference": "c10a5f6e06fc2470ab1822fa13fa2a7380f8fbac",
-                "shasum": ""
-            },
-            "require": {
-                "hamcrest/hamcrest-php": "^2.0.1",
-                "lib-pcre": ">=7.0",
-                "php": "^7.3 || ^8.0"
-            },
-            "conflict": {
-                "phpunit/phpunit": "<8.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^8.5 || ^9.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.4.x-dev"
-                }
-            },
+          "reference": "c10a5f6e06fc2470ab1822fa13fa2a7380f8fbac",
+          "shasum": ""
+        },
+        "require": {
+          "hamcrest/hamcrest-php": "^2.0.1",
+          "lib-pcre": ">=7.0",
+          "php": "^7.3 || ^8.0"
+        },
+        "conflict": {
+          "phpunit/phpunit": "<8.0"
+        },
+        "require-dev": {
+          "phpunit/phpunit": "^8.5 || ^9.3"
+        },
+        "type": "library",
+        "extra": {
+          "branch-alias": {
+            "dev-master": "1.4.x-dev"
+          }
+        },
             "autoload": {
                 "psr-0": {
                     "Mockery": "library/"
@@ -8645,20 +8914,20 @@
                     "role": "Developer"
                 }
             ],
-            "description": "A beautiful error page for Laravel applications.",
-            "homepage": "https://flareapp.io/ignition",
-            "keywords": [
-                "error",
-                "flare",
-                "laravel",
-                "page"
-            ],
-            "support": {
-                "docs": "https://flareapp.io/docs/ignition-for-laravel/introduction",
-                "forum": "https://twitter.com/flareappio",
-                "issues": "https://github.com/spatie/laravel-ignition/issues",
-                "source": "https://github.com/spatie/laravel-ignition"
-            },
+          "description": "A beautiful error page for Laravel applications.",
+          "homepage": "https://flareapp.io/ignition",
+          "keywords": [
+            "error",
+            "flare",
+            "laravel",
+            "page"
+          ],
+          "support": {
+            "docs": "https://flareapp.io/docs/ignition-for-laravel/introduction",
+            "forum": "https://twitter.com/flareappio",
+            "issues": "https://github.com/spatie/laravel-ignition/issues",
+            "source": "https://github.com/spatie/laravel-ignition"
+          },
           "funding": [
             {
               "url": "https://github.com/spatie",
@@ -8746,26 +9015,26 @@
         "dist": {
           "type": "zip",
           "url": "https://api.github.com/repos/theseer/tokenizer/zipball/34a41e998c2183e22995f158c581e7b5e755ab9e",
-                "reference": "34a41e998c2183e22995f158c581e7b5e755ab9e",
-                "shasum": ""
-            },
-            "require": {
-                "ext-dom": "*",
-                "ext-tokenizer": "*",
-                "ext-xmlwriter": "*",
-                "php": "^7.2 || ^8.0"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
+          "reference": "34a41e998c2183e22995f158c581e7b5e755ab9e",
+          "shasum": ""
+        },
+        "require": {
+          "ext-dom": "*",
+          "ext-tokenizer": "*",
+          "ext-xmlwriter": "*",
+          "php": "^7.2 || ^8.0"
+        },
+        "type": "library",
+        "autoload": {
+          "classmap": [
+            "src/"
+          ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+          "BSD-3-Clause"
+        ],
+        "authors": [
                 {
                     "name": "Arne Blankerts",
                     "email": "arne@blankerts.de",

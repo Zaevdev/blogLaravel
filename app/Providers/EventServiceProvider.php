@@ -20,6 +20,10 @@ class EventServiceProvider extends ServiceProvider
         Registered::class => [
             SendEmailVerificationNotification::class,
         ],
+        \SocialiteProviders\Manager\SocialiteWasCalled::class => [
+            // ... other providers
+            \SocialiteProviders\VKontakte\VKontakteExtendSocialite::class . '@handle',
+        ],
     ];
 
     /**
@@ -35,35 +39,28 @@ class EventServiceProvider extends ServiceProvider
                 'text' => 'Posts',
                 'route' => 'admin.post.index',
                 'icon' => 'far fa-fw fa-list-alt',
-                'label' => Post::all()->count(),
-                'label_color' => 'success',
             ]);
             $event->menu->addAfter('posts', [
                 'key' => 'categories',
                 'text' => 'Categories',
                 'route' => 'admin.categories.index',
                 'icon' => 'far fa-fw fa fa-paperclip',
-                'label' => Category::all()->count(),
-                'label_color' => 'success',
             ]);
             $event->menu->addAfter('categories', [
                 'key' => 'tags',
                 'text' => 'Tags',
                 'route' => 'admin.tag.index',
                 'icon' => 'far fa-fw fa fa-tag',
-                'label' => Tag::all()->count(),
-                'label_color' => 'success',
             ]);
             $event->menu->addAfter('tags', [
                 'key' => 'users',
                 'text' => 'Users',
                 'route' => 'admin.user.index',
                 'icon' => 'far fa-fw fa fa-users',
-                'label' => User::all()->count(),
-                'label_color' => 'success',
             ]);
         });
     }
+
     /**
      * Determine if events and listeners should be automatically discovered.
      *

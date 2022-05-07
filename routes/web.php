@@ -69,4 +69,9 @@ Route::prefix('admin')->middleware(['auth', 'role:admin', 'verified'])->group(fu
 
 Auth::routes(['verify' => true]);
 
+Route::group(['middleware' => 'guest'], function () {
+    Route::get('/vk/auth', [\App\Http\Controllers\Auth\SocialController::class, 'index'])->name('vk.auth');
+    Route::get('/vk/auth/callback', [\App\Http\Controllers\Auth\SocialController::class, 'callback']);
+});
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

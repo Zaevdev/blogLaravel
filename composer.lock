@@ -1,40 +1,40 @@
 {
-  "_readme": [
-    "This file locks the dependencies of your project to a known state",
-    "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
-    "This file is @generated automatically"
-  ],
-  "content-hash": "d58e922a05ce857d93978485811d1121",
-  "packages": [
-    {
-      "name": "almasaeed2010/adminlte",
-      "version": "v3.2.0",
-      "source": {
-        "type": "git",
-        "url": "https://github.com/ColorlibHQ/AdminLTE.git",
-        "reference": "bd4d9c72931f1dd28601b6bfb387554a381ad540"
-      },
-      "dist": {
-        "type": "zip",
-        "url": "https://api.github.com/repos/ColorlibHQ/AdminLTE/zipball/bd4d9c72931f1dd28601b6bfb387554a381ad540",
-        "reference": "bd4d9c72931f1dd28601b6bfb387554a381ad540",
-        "shasum": ""
-      },
-      "type": "library",
-      "notification-url": "https://packagist.org/downloads/",
-      "license": [
-        "MIT"
-      ],
-      "authors": [
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "fe2edb3ec5c9fe428a05667447f36e1b",
+    "packages": [
         {
-          "name": "Colorlib"
-        }
-      ],
-      "description": "AdminLTE - admin control panel and dashboard that's based on Bootstrap 4",
-      "homepage": "https://adminlte.io/",
-      "keywords": [
-        "JS",
-        "admin",
+            "name": "almasaeed2010/adminlte",
+            "version": "v3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ColorlibHQ/AdminLTE.git",
+                "reference": "bd4d9c72931f1dd28601b6bfb387554a381ad540"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ColorlibHQ/AdminLTE/zipball/bd4d9c72931f1dd28601b6bfb387554a381ad540",
+                "reference": "bd4d9c72931f1dd28601b6bfb387554a381ad540",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Colorlib"
+                }
+            ],
+            "description": "AdminLTE - admin control panel and dashboard that's based on Bootstrap 4",
+            "homepage": "https://adminlte.io/",
+            "keywords": [
+                "JS",
+                "admin",
                 "back-end",
                 "css",
                 "less",
@@ -1282,112 +1282,112 @@
                     "email": "taylor@laravel.com"
                 },
                 {
-                  "name": "Nuno Maduro",
-                  "email": "nuno@laravel.com"
+                    "name": "Nuno Maduro",
+                    "email": "nuno@laravel.com"
                 }
             ],
-          "description": "Laravel Serializable Closure provides an easy and secure way to serialize closures in PHP.",
-          "keywords": [
-            "closure",
-            "laravel",
-            "serializable"
-          ],
-          "support": {
-            "issues": "https://github.com/laravel/serializable-closure/issues",
-            "source": "https://github.com/laravel/serializable-closure"
-          },
-          "time": "2022-02-11T19:23:53+00:00"
+            "description": "Laravel Serializable Closure provides an easy and secure way to serialize closures in PHP.",
+            "keywords": [
+                "closure",
+                "laravel",
+                "serializable"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/serializable-closure/issues",
+                "source": "https://github.com/laravel/serializable-closure"
+            },
+            "time": "2022-02-11T19:23:53+00:00"
         },
-    {
-      "name": "laravel/socialite",
-      "version": "v5.5.2",
-      "source": {
-        "type": "git",
-        "url": "https://github.com/laravel/socialite.git",
-        "reference": "68afb03259b82d898c68196cbcacd48596a9dd72"
-      },
-      "dist": {
-        "type": "zip",
-        "url": "https://api.github.com/repos/laravel/socialite/zipball/68afb03259b82d898c68196cbcacd48596a9dd72",
-        "reference": "68afb03259b82d898c68196cbcacd48596a9dd72",
-        "shasum": ""
-      },
-      "require": {
-        "ext-json": "*",
-        "guzzlehttp/guzzle": "^6.0|^7.0",
-        "illuminate/http": "^6.0|^7.0|^8.0|^9.0",
-        "illuminate/support": "^6.0|^7.0|^8.0|^9.0",
-        "league/oauth1-client": "^1.0",
-        "php": "^7.2|^8.0"
-      },
-      "require-dev": {
-        "illuminate/contracts": "^6.0|^7.0|^8.0|^9.0",
-        "mockery/mockery": "^1.0",
-        "orchestra/testbench": "^4.0|^5.0|^6.0|^7.0",
-        "phpunit/phpunit": "^8.0|^9.3"
-      },
-      "type": "library",
-      "extra": {
-        "branch-alias": {
-          "dev-master": "5.x-dev"
-        },
-        "laravel": {
-          "providers": [
-            "Laravel\\Socialite\\SocialiteServiceProvider"
-          ],
-          "aliases": {
-            "Socialite": "Laravel\\Socialite\\Facades\\Socialite"
-          }
-        }
-      },
-      "autoload": {
-        "psr-4": {
-          "Laravel\\Socialite\\": "src/"
-        }
-      },
-      "notification-url": "https://packagist.org/downloads/",
-      "license": [
-        "MIT"
-      ],
-      "authors": [
         {
-          "name": "Taylor Otwell",
-          "email": "taylor@laravel.com"
-        }
-      ],
-      "description": "Laravel wrapper around OAuth 1 & OAuth 2 libraries.",
-      "homepage": "https://laravel.com",
-      "keywords": [
-        "laravel",
-        "oauth"
-      ],
-      "support": {
-        "issues": "https://github.com/laravel/socialite/issues",
-        "source": "https://github.com/laravel/socialite"
-      },
-      "time": "2022-03-10T15:26:19+00:00"
-    },
-    {
-      "name": "laravel/tinker",
-      "version": "v2.7.2",
-      "source": {
-        "type": "git",
-        "url": "https://github.com/laravel/tinker.git",
-        "reference": "dff39b661e827dae6e092412f976658df82dbac5"
-      },
-      "dist": {
-        "type": "zip",
-        "url": "https://api.github.com/repos/laravel/tinker/zipball/dff39b661e827dae6e092412f976658df82dbac5",
-        "reference": "dff39b661e827dae6e092412f976658df82dbac5",
-        "shasum": ""
-      },
-      "require": {
-        "illuminate/console": "^6.0|^7.0|^8.0|^9.0",
-        "illuminate/contracts": "^6.0|^7.0|^8.0|^9.0",
-        "illuminate/support": "^6.0|^7.0|^8.0|^9.0",
-        "php": "^7.2.5|^8.0",
-        "psy/psysh": "^0.10.4|^0.11.1",
-        "symfony/var-dumper": "^4.3.4|^5.0|^6.0"
+            "name": "laravel/socialite",
+            "version": "v5.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/socialite.git",
+                "reference": "68afb03259b82d898c68196cbcacd48596a9dd72"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/socialite/zipball/68afb03259b82d898c68196cbcacd48596a9dd72",
+                "reference": "68afb03259b82d898c68196cbcacd48596a9dd72",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "guzzlehttp/guzzle": "^6.0|^7.0",
+                "illuminate/http": "^6.0|^7.0|^8.0|^9.0",
+                "illuminate/support": "^6.0|^7.0|^8.0|^9.0",
+                "league/oauth1-client": "^1.0",
+                "php": "^7.2|^8.0"
+            },
+            "require-dev": {
+                "illuminate/contracts": "^6.0|^7.0|^8.0|^9.0",
+                "mockery/mockery": "^1.0",
+                "orchestra/testbench": "^4.0|^5.0|^6.0|^7.0",
+                "phpunit/phpunit": "^8.0|^9.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Socialite\\SocialiteServiceProvider"
+                    ],
+                    "aliases": {
+                        "Socialite": "Laravel\\Socialite\\Facades\\Socialite"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Socialite\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Laravel wrapper around OAuth 1 & OAuth 2 libraries.",
+            "homepage": "https://laravel.com",
+            "keywords": [
+                "laravel",
+                "oauth"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/socialite/issues",
+                "source": "https://github.com/laravel/socialite"
+            },
+            "time": "2022-03-10T15:26:19+00:00"
+        },
+        {
+            "name": "laravel/tinker",
+            "version": "v2.7.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/tinker.git",
+                "reference": "dff39b661e827dae6e092412f976658df82dbac5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/tinker/zipball/dff39b661e827dae6e092412f976658df82dbac5",
+                "reference": "dff39b661e827dae6e092412f976658df82dbac5",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^6.0|^7.0|^8.0|^9.0",
+                "illuminate/contracts": "^6.0|^7.0|^8.0|^9.0",
+                "illuminate/support": "^6.0|^7.0|^8.0|^9.0",
+                "php": "^7.2.5|^8.0",
+                "psy/psysh": "^0.10.4|^0.11.1",
+                "symfony/var-dumper": "^4.3.4|^5.0|^6.0"
             },
             "require-dev": {
                 "mockery/mockery": "~1.3.3|^1.4.2",
@@ -1819,114 +1819,114 @@
                 "source": "https://github.com/thephpleague/mime-type-detection/tree/1.11.0"
             },
             "funding": [
-              {
-                "url": "https://github.com/frankdejonge",
-                "type": "github"
-              },
-              {
-                "url": "https://tidelift.com/funding/github/packagist/league/flysystem",
-                "type": "tidelift"
-              }
+                {
+                    "url": "https://github.com/frankdejonge",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/league/flysystem",
+                    "type": "tidelift"
+                }
             ],
-          "time": "2022-04-17T13:12:02+00:00"
+            "time": "2022-04-17T13:12:02+00:00"
         },
-    {
-      "name": "league/oauth1-client",
-      "version": "v1.10.1",
-      "source": {
-        "type": "git",
-        "url": "https://github.com/thephpleague/oauth1-client.git",
-        "reference": "d6365b901b5c287dd41f143033315e2f777e1167"
-      },
-      "dist": {
-        "type": "zip",
-        "url": "https://api.github.com/repos/thephpleague/oauth1-client/zipball/d6365b901b5c287dd41f143033315e2f777e1167",
-        "reference": "d6365b901b5c287dd41f143033315e2f777e1167",
-        "shasum": ""
-      },
-      "require": {
-        "ext-json": "*",
-        "ext-openssl": "*",
-        "guzzlehttp/guzzle": "^6.0|^7.0",
-        "guzzlehttp/psr7": "^1.7|^2.0",
-        "php": ">=7.1||>=8.0"
-      },
-      "require-dev": {
-        "ext-simplexml": "*",
-        "friendsofphp/php-cs-fixer": "^2.17",
-        "mockery/mockery": "^1.3.3",
-        "phpstan/phpstan": "^0.12.42",
-        "phpunit/phpunit": "^7.5||9.5"
-      },
-      "suggest": {
-        "ext-simplexml": "For decoding XML-based responses."
-      },
-      "type": "library",
-      "extra": {
-        "branch-alias": {
-          "dev-master": "1.0-dev",
-          "dev-develop": "2.0-dev"
-        }
-      },
-      "autoload": {
-        "psr-4": {
-          "League\\OAuth1\\Client\\": "src/"
-        }
-      },
-      "notification-url": "https://packagist.org/downloads/",
-      "license": [
-        "MIT"
-      ],
-      "authors": [
         {
-          "name": "Ben Corlett",
-          "email": "bencorlett@me.com",
-          "homepage": "http://www.webcomm.com.au",
-          "role": "Developer"
-        }
-      ],
-      "description": "OAuth 1.0 Client Library",
-      "keywords": [
-        "Authentication",
-        "SSO",
-        "authorization",
-        "bitbucket",
-        "identity",
-        "idp",
-        "oauth",
-        "oauth1",
-        "single sign on",
-        "trello",
-        "tumblr",
-        "twitter"
-      ],
-      "support": {
-        "issues": "https://github.com/thephpleague/oauth1-client/issues",
-        "source": "https://github.com/thephpleague/oauth1-client/tree/v1.10.1"
-      },
-      "time": "2022-04-15T14:02:14+00:00"
-    },
-    {
-      "name": "monolog/monolog",
-      "version": "2.5.0",
-      "source": {
-        "type": "git",
-        "url": "https://github.com/Seldaek/monolog.git",
-        "reference": "4192345e260f1d51b365536199744b987e160edc"
-      },
-      "dist": {
-        "type": "zip",
-        "url": "https://api.github.com/repos/Seldaek/monolog/zipball/4192345e260f1d51b365536199744b987e160edc",
-        "reference": "4192345e260f1d51b365536199744b987e160edc",
-        "shasum": ""
-      },
-      "require": {
-        "php": ">=7.2",
-        "psr/log": "^1.0.1 || ^2.0 || ^3.0"
-      },
-      "provide": {
-        "psr/log-implementation": "1.0.0 || 2.0.0 || 3.0.0"
-      },
+            "name": "league/oauth1-client",
+            "version": "v1.10.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/oauth1-client.git",
+                "reference": "d6365b901b5c287dd41f143033315e2f777e1167"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/oauth1-client/zipball/d6365b901b5c287dd41f143033315e2f777e1167",
+                "reference": "d6365b901b5c287dd41f143033315e2f777e1167",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-openssl": "*",
+                "guzzlehttp/guzzle": "^6.0|^7.0",
+                "guzzlehttp/psr7": "^1.7|^2.0",
+                "php": ">=7.1||>=8.0"
+            },
+            "require-dev": {
+                "ext-simplexml": "*",
+                "friendsofphp/php-cs-fixer": "^2.17",
+                "mockery/mockery": "^1.3.3",
+                "phpstan/phpstan": "^0.12.42",
+                "phpunit/phpunit": "^7.5||9.5"
+            },
+            "suggest": {
+                "ext-simplexml": "For decoding XML-based responses."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev",
+                    "dev-develop": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\OAuth1\\Client\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ben Corlett",
+                    "email": "bencorlett@me.com",
+                    "homepage": "http://www.webcomm.com.au",
+                    "role": "Developer"
+                }
+            ],
+            "description": "OAuth 1.0 Client Library",
+            "keywords": [
+                "Authentication",
+                "SSO",
+                "authorization",
+                "bitbucket",
+                "identity",
+                "idp",
+                "oauth",
+                "oauth1",
+                "single sign on",
+                "trello",
+                "tumblr",
+                "twitter"
+            ],
+            "support": {
+                "issues": "https://github.com/thephpleague/oauth1-client/issues",
+                "source": "https://github.com/thephpleague/oauth1-client/tree/v1.10.1"
+            },
+            "time": "2022-04-15T14:02:14+00:00"
+        },
+        {
+            "name": "monolog/monolog",
+            "version": "2.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/monolog.git",
+                "reference": "4192345e260f1d51b365536199744b987e160edc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/4192345e260f1d51b365536199744b987e160edc",
+                "reference": "4192345e260f1d51b365536199744b987e160edc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "psr/log": "^1.0.1 || ^2.0 || ^3.0"
+            },
+            "provide": {
+                "psr/log-implementation": "1.0.0 || 2.0.0 || 3.0.0"
+            },
             "require-dev": {
                 "aws/aws-sdk-php": "^2.4.9 || ^3.0",
                 "doctrine/couchdb": "~1.0@dev",
@@ -2305,6 +2305,204 @@
             "time": "2021-11-30T19:35:32+00:00"
         },
         {
+            "name": "paragonie/constant_time_encoding",
+            "version": "v2.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paragonie/constant_time_encoding.git",
+                "reference": "9229e15f2e6ba772f0c55dd6986c563b937170a8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/paragonie/constant_time_encoding/zipball/9229e15f2e6ba772f0c55dd6986c563b937170a8",
+                "reference": "9229e15f2e6ba772f0c55dd6986c563b937170a8",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7|^8"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6|^7|^8|^9",
+                "vimeo/psalm": "^1|^2|^3|^4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ParagonIE\\ConstantTime\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paragon Initiative Enterprises",
+                    "email": "security@paragonie.com",
+                    "homepage": "https://paragonie.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Steve 'Sc00bz' Thomas",
+                    "email": "steve@tobtu.com",
+                    "homepage": "https://www.tobtu.com",
+                    "role": "Original Developer"
+                }
+            ],
+            "description": "Constant-time Implementations of RFC 4648 Encoding (Base-64, Base-32, Base-16)",
+            "keywords": [
+                "base16",
+                "base32",
+                "base32_decode",
+                "base32_encode",
+                "base64",
+                "base64_decode",
+                "base64_encode",
+                "bin2hex",
+                "encoding",
+                "hex",
+                "hex2bin",
+                "rfc4648"
+            ],
+            "support": {
+                "email": "info@paragonie.com",
+                "issues": "https://github.com/paragonie/constant_time_encoding/issues",
+                "source": "https://github.com/paragonie/constant_time_encoding"
+            },
+            "time": "2022-01-17T05:32:27+00:00"
+        },
+        {
+            "name": "paragonie/random_compat",
+            "version": "v9.99.100",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paragonie/random_compat.git",
+                "reference": "996434e5492cb4c3edcb9168db6fbb1359ef965a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/996434e5492cb4c3edcb9168db6fbb1359ef965a",
+                "reference": "996434e5492cb4c3edcb9168db6fbb1359ef965a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 7"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*|5.*",
+                "vimeo/psalm": "^1"
+            },
+            "suggest": {
+                "ext-libsodium": "Provides a modern crypto API that can be used to generate random bytes."
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paragon Initiative Enterprises",
+                    "email": "security@paragonie.com",
+                    "homepage": "https://paragonie.com"
+                }
+            ],
+            "description": "PHP 5.x polyfill for random_bytes() and random_int() from PHP 7",
+            "keywords": [
+                "csprng",
+                "polyfill",
+                "pseudorandom",
+                "random"
+            ],
+            "support": {
+                "email": "info@paragonie.com",
+                "issues": "https://github.com/paragonie/random_compat/issues",
+                "source": "https://github.com/paragonie/random_compat"
+            },
+            "time": "2020-10-15T08:29:30+00:00"
+        },
+        {
+            "name": "php-amqplib/php-amqplib",
+            "version": "v3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-amqplib/php-amqplib.git",
+                "reference": "0bec5b392428e0ac3b3f34fbc4e02d706995833e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-amqplib/php-amqplib/zipball/0bec5b392428e0ac3b3f34fbc4e02d706995833e",
+                "reference": "0bec5b392428e0ac3b3f34fbc4e02d706995833e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "ext-sockets": "*",
+                "php": "^7.1||^8.0",
+                "phpseclib/phpseclib": "^2.0|^3.0"
+            },
+            "conflict": {
+                "php": "7.4.0 - 7.4.1"
+            },
+            "replace": {
+                "videlalvaro/php-amqplib": "self.version"
+            },
+            "require-dev": {
+                "ext-curl": "*",
+                "nategood/httpful": "^0.2.20",
+                "phpunit/phpunit": "^7.5|^9.5",
+                "squizlabs/php_codesniffer": "^3.6"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PhpAmqpLib\\": "PhpAmqpLib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Alvaro Videla",
+                    "role": "Original Maintainer"
+                },
+                {
+                    "name": "Raúl Araya",
+                    "email": "nubeiro@gmail.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Luke Bakken",
+                    "email": "luke@bakken.io",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Ramūnas Dronga",
+                    "email": "github@ramuno.lt",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Formerly videlalvaro/php-amqplib.  This library is a pure PHP implementation of the AMQP protocol. It's been tested against RabbitMQ.",
+            "homepage": "https://github.com/php-amqplib/php-amqplib/",
+            "keywords": [
+                "message",
+                "queue",
+                "rabbitmq"
+            ],
+            "support": {
+                "issues": "https://github.com/php-amqplib/php-amqplib/issues",
+                "source": "https://github.com/php-amqplib/php-amqplib/tree/v3.2.0"
+            },
+            "time": "2022-03-10T19:16:00+00:00"
+        },
+        {
             "name": "phpoption/phpoption",
             "version": "1.8.1",
             "source": {
@@ -2374,6 +2572,115 @@
                 }
             ],
             "time": "2021-12-04T23:24:31+00:00"
+        },
+        {
+            "name": "phpseclib/phpseclib",
+            "version": "3.0.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpseclib/phpseclib.git",
+                "reference": "2f0b7af658cbea265cbb4a791d6c29a6613f98ef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/2f0b7af658cbea265cbb4a791d6c29a6613f98ef",
+                "reference": "2f0b7af658cbea265cbb4a791d6c29a6613f98ef",
+                "shasum": ""
+            },
+            "require": {
+                "paragonie/constant_time_encoding": "^1|^2",
+                "paragonie/random_compat": "^1.4|^2.0|^9.99.99",
+                "php": ">=5.6.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "suggest": {
+                "ext-gmp": "Install the GMP (GNU Multiple Precision) extension in order to speed up arbitrary precision integer arithmetic operations.",
+                "ext-libsodium": "SSH2/SFTP can make use of some algorithms provided by the libsodium-php extension.",
+                "ext-mcrypt": "Install the Mcrypt extension in order to speed up a few other cryptographic operations.",
+                "ext-openssl": "Install the OpenSSL extension in order to speed up a wide variety of cryptographic operations."
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "phpseclib/bootstrap.php"
+                ],
+                "psr-4": {
+                    "phpseclib3\\": "phpseclib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jim Wigginton",
+                    "email": "terrafrost@php.net",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Patrick Monnerat",
+                    "email": "pm@datasphere.ch",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Andreas Fischer",
+                    "email": "bantu@phpbb.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Hans-Jürgen Petrich",
+                    "email": "petrich@tronic-media.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Graham Campbell",
+                    "email": "graham@alt-three.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP Secure Communications Library - Pure-PHP implementations of RSA, AES, SSH2, SFTP, X.509 etc.",
+            "homepage": "http://phpseclib.sourceforge.net",
+            "keywords": [
+                "BigInteger",
+                "aes",
+                "asn.1",
+                "asn1",
+                "blowfish",
+                "crypto",
+                "cryptography",
+                "encryption",
+                "rsa",
+                "security",
+                "sftp",
+                "signature",
+                "signing",
+                "ssh",
+                "twofish",
+                "x.509",
+                "x509"
+            ],
+            "support": {
+                "issues": "https://github.com/phpseclib/phpseclib/issues",
+                "source": "https://github.com/phpseclib/phpseclib/tree/3.0.14"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/terrafrost",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/phpseclib",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/phpseclib/phpseclib",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-04-04T05:15:45+00:00"
         },
         {
             "name": "psr/container",
@@ -3023,162 +3330,162 @@
                 "source": "https://github.com/ramsey/uuid/tree/4.3.1"
             },
             "funding": [
-              {
-                "url": "https://github.com/ramsey",
-                "type": "github"
-              },
-              {
-                "url": "https://tidelift.com/funding/github/packagist/ramsey/uuid",
-                "type": "tidelift"
-              }
+                {
+                    "url": "https://github.com/ramsey",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/ramsey/uuid",
+                    "type": "tidelift"
+                }
             ],
-          "time": "2022-03-27T21:42:02+00:00"
-        },
-    {
-      "name": "socialiteproviders/manager",
-      "version": "v4.1.0",
-      "source": {
-        "type": "git",
-        "url": "https://github.com/SocialiteProviders/Manager.git",
-        "reference": "4e63afbd26dc45ff263591de2a0970436a6a0bf9"
-      },
-      "dist": {
-        "type": "zip",
-        "url": "https://api.github.com/repos/SocialiteProviders/Manager/zipball/4e63afbd26dc45ff263591de2a0970436a6a0bf9",
-        "reference": "4e63afbd26dc45ff263591de2a0970436a6a0bf9",
-        "shasum": ""
-      },
-      "require": {
-        "illuminate/support": "^6.0 || ^7.0 || ^8.0 || ^9.0",
-        "laravel/socialite": "~4.0 || ~5.0",
-        "php": "^7.2 || ^8.0"
-      },
-      "require-dev": {
-        "mockery/mockery": "^1.2",
-        "phpunit/phpunit": "^6.0 || ^9.0"
-      },
-      "type": "library",
-      "extra": {
-        "laravel": {
-          "providers": [
-            "SocialiteProviders\\Manager\\ServiceProvider"
-          ]
-        }
-      },
-      "autoload": {
-        "psr-4": {
-          "SocialiteProviders\\Manager\\": "src/"
-        }
-      },
-      "notification-url": "https://packagist.org/downloads/",
-      "license": [
-        "MIT"
-      ],
-      "authors": [
-        {
-          "name": "Andy Wendt",
-          "email": "andy@awendt.com"
+            "time": "2022-03-27T21:42:02+00:00"
         },
         {
-          "name": "Anton Komarev",
-          "email": "a.komarev@cybercog.su"
+            "name": "socialiteproviders/manager",
+            "version": "v4.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SocialiteProviders/Manager.git",
+                "reference": "4e63afbd26dc45ff263591de2a0970436a6a0bf9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SocialiteProviders/Manager/zipball/4e63afbd26dc45ff263591de2a0970436a6a0bf9",
+                "reference": "4e63afbd26dc45ff263591de2a0970436a6a0bf9",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^6.0 || ^7.0 || ^8.0 || ^9.0",
+                "laravel/socialite": "~4.0 || ~5.0",
+                "php": "^7.2 || ^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.2",
+                "phpunit/phpunit": "^6.0 || ^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "SocialiteProviders\\Manager\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SocialiteProviders\\Manager\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andy Wendt",
+                    "email": "andy@awendt.com"
+                },
+                {
+                    "name": "Anton Komarev",
+                    "email": "a.komarev@cybercog.su"
+                },
+                {
+                    "name": "Miguel Piedrafita",
+                    "email": "soy@miguelpiedrafita.com"
+                },
+                {
+                    "name": "atymic",
+                    "email": "atymicq@gmail.com",
+                    "homepage": "https://atymic.dev"
+                }
+            ],
+            "description": "Easily add new or override built-in providers in Laravel Socialite.",
+            "homepage": "https://socialiteproviders.com",
+            "keywords": [
+                "laravel",
+                "manager",
+                "oauth",
+                "providers",
+                "socialite"
+            ],
+            "support": {
+                "issues": "https://github.com/socialiteproviders/manager/issues",
+                "source": "https://github.com/socialiteproviders/manager"
+            },
+            "time": "2022-01-23T22:40:23+00:00"
         },
         {
-          "name": "Miguel Piedrafita",
-          "email": "soy@miguelpiedrafita.com"
+            "name": "socialiteproviders/vkontakte",
+            "version": "4.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SocialiteProviders/VKontakte.git",
+                "reference": "8bfbe64cb43f99f56b59d0aec2dccfae29b2de4f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SocialiteProviders/VKontakte/zipball/8bfbe64cb43f99f56b59d0aec2dccfae29b2de4f",
+                "reference": "8bfbe64cb43f99f56b59d0aec2dccfae29b2de4f",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^7.2 || ^8.0",
+                "socialiteproviders/manager": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SocialiteProviders\\VKontakte\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brian Faust",
+                    "email": "hello@brianfaust.de"
+                }
+            ],
+            "description": "VKontakte OAuth2 Provider for Laravel Socialite",
+            "keywords": [
+                "laravel",
+                "oauth",
+                "provider",
+                "socialite",
+                "vkontakte"
+            ],
+            "support": {
+                "docs": "https://socialiteproviders.com/vkontakte",
+                "issues": "https://github.com/socialiteproviders/providers/issues",
+                "source": "https://github.com/socialiteproviders/providers"
+            },
+            "time": "2021-09-01T23:20:55+00:00"
         },
         {
-          "name": "atymic",
-          "email": "atymicq@gmail.com",
-          "homepage": "https://atymic.dev"
-        }
-      ],
-      "description": "Easily add new or override built-in providers in Laravel Socialite.",
-      "homepage": "https://socialiteproviders.com",
-      "keywords": [
-        "laravel",
-        "manager",
-        "oauth",
-        "providers",
-        "socialite"
-      ],
-      "support": {
-        "issues": "https://github.com/socialiteproviders/manager/issues",
-        "source": "https://github.com/socialiteproviders/manager"
-      },
-      "time": "2022-01-23T22:40:23+00:00"
-    },
-    {
-      "name": "socialiteproviders/vkontakte",
-      "version": "4.2.2",
-      "source": {
-        "type": "git",
-        "url": "https://github.com/SocialiteProviders/VKontakte.git",
-        "reference": "8bfbe64cb43f99f56b59d0aec2dccfae29b2de4f"
-      },
-      "dist": {
-        "type": "zip",
-        "url": "https://api.github.com/repos/SocialiteProviders/VKontakte/zipball/8bfbe64cb43f99f56b59d0aec2dccfae29b2de4f",
-        "reference": "8bfbe64cb43f99f56b59d0aec2dccfae29b2de4f",
-        "shasum": ""
-      },
-      "require": {
-        "ext-json": "*",
-        "php": "^7.2 || ^8.0",
-        "socialiteproviders/manager": "~4.0"
-      },
-      "type": "library",
-      "autoload": {
-        "psr-4": {
-          "SocialiteProviders\\VKontakte\\": ""
-        }
-      },
-      "notification-url": "https://packagist.org/downloads/",
-      "license": [
-        "MIT"
-      ],
-      "authors": [
-        {
-          "name": "Brian Faust",
-          "email": "hello@brianfaust.de"
-        }
-      ],
-      "description": "VKontakte OAuth2 Provider for Laravel Socialite",
-      "keywords": [
-        "laravel",
-        "oauth",
-        "provider",
-        "socialite",
-        "vkontakte"
-      ],
-      "support": {
-        "docs": "https://socialiteproviders.com/vkontakte",
-        "issues": "https://github.com/socialiteproviders/providers/issues",
-        "source": "https://github.com/socialiteproviders/providers"
-      },
-      "time": "2021-09-01T23:20:55+00:00"
-    },
-    {
-      "name": "symfony/console",
-      "version": "v6.0.7",
-      "source": {
-        "type": "git",
-        "url": "https://github.com/symfony/console.git",
-        "reference": "70dcf7b2ca2ea08ad6ebcc475f104a024fb5632e"
-      },
-      "dist": {
-        "type": "zip",
-        "url": "https://api.github.com/repos/symfony/console/zipball/70dcf7b2ca2ea08ad6ebcc475f104a024fb5632e",
-        "reference": "70dcf7b2ca2ea08ad6ebcc475f104a024fb5632e",
-        "shasum": ""
-      },
-      "require": {
-        "php": ">=8.0.2",
-        "symfony/polyfill-mbstring": "~1.0",
-        "symfony/service-contracts": "^1.1|^2|^3",
-        "symfony/string": "^5.4|^6.0"
-      },
-      "conflict": {
+            "name": "symfony/console",
+            "version": "v6.0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/console.git",
+                "reference": "70dcf7b2ca2ea08ad6ebcc475f104a024fb5632e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/console/zipball/70dcf7b2ca2ea08ad6ebcc475f104a024fb5632e",
+                "reference": "70dcf7b2ca2ea08ad6ebcc475f104a024fb5632e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.2",
+                "symfony/polyfill-mbstring": "~1.0",
+                "symfony/service-contracts": "^1.1|^2|^3",
+                "symfony/string": "^5.4|^6.0"
+            },
+            "conflict": {
                 "symfony/dependency-injection": "<5.4",
                 "symfony/dotenv": "<5.4",
                 "symfony/event-dispatcher": "<5.4",
@@ -5360,6 +5667,69 @@
             "time": "2022-03-23T02:04:52+00:00"
         },
         {
+            "name": "vladimir-yuldashev/laravel-queue-rabbitmq",
+            "version": "v12.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vyuldashev/laravel-queue-rabbitmq.git",
+                "reference": "2401f7c1bcc988b3b694bba160feb824d3306e05"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vyuldashev/laravel-queue-rabbitmq/zipball/2401f7c1bcc988b3b694bba160feb824d3306e05",
+                "reference": "2401f7c1bcc988b3b694bba160feb824d3306e05",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "illuminate/queue": "^9.0",
+                "php": "^8.0",
+                "php-amqplib/php-amqplib": "^3.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.6",
+                "laravel/horizon": "^5.0",
+                "mockery/mockery": "^1.0",
+                "orchestra/testbench": "^7.0",
+                "phpunit/phpunit": "^9.3"
+            },
+            "suggest": {
+                "ext-pcntl": "Required to use all features of the queue consumer."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "11.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "VladimirYuldashev\\LaravelQueueRabbitMQ\\LaravelQueueRabbitMQServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "VladimirYuldashev\\LaravelQueueRabbitMQ\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vladimir Yuldashev",
+                    "email": "misterio92@gmail.com"
+                }
+            ],
+            "description": "RabbitMQ driver for Laravel Queue. Supports Laravel Horizon.",
+            "support": {
+                "issues": "https://github.com/vyuldashev/laravel-queue-rabbitmq/issues",
+                "source": "https://github.com/vyuldashev/laravel-queue-rabbitmq/tree/v12.0.1"
+            },
+            "time": "2022-04-06T21:52:20+00:00"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v5.4.1",
             "source": {
@@ -5573,122 +5943,122 @@
         }
     ],
     "packages-dev": [
-      {
-        "name": "barryvdh/laravel-debugbar",
-        "version": "v3.6.7",
-        "source": {
-          "type": "git",
-          "url": "https://github.com/barryvdh/laravel-debugbar.git",
-          "reference": "b96f9820aaf1ff9afe945207883149e1c7afb298"
-        },
-        "dist": {
-          "type": "zip",
-          "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/b96f9820aaf1ff9afe945207883149e1c7afb298",
-          "reference": "b96f9820aaf1ff9afe945207883149e1c7afb298",
-          "shasum": ""
-        },
-        "require": {
-          "illuminate/routing": "^6|^7|^8|^9",
-          "illuminate/session": "^6|^7|^8|^9",
-          "illuminate/support": "^6|^7|^8|^9",
-          "maximebf/debugbar": "^1.17.2",
-          "php": ">=7.2",
-          "symfony/debug": "^4.3|^5|^6",
-          "symfony/finder": "^4.3|^5|^6"
-        },
-        "require-dev": {
-          "mockery/mockery": "^1.3.3",
-          "orchestra/testbench-dusk": "^4|^5|^6|^7",
-          "phpunit/phpunit": "^8.5|^9.0",
-          "squizlabs/php_codesniffer": "^3.5"
-        },
-        "type": "library",
-        "extra": {
-          "branch-alias": {
-            "dev-master": "3.6-dev"
-          },
-          "laravel": {
-            "providers": [
-              "Barryvdh\\Debugbar\\ServiceProvider"
+        {
+            "name": "barryvdh/laravel-debugbar",
+            "version": "v3.6.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/barryvdh/laravel-debugbar.git",
+                "reference": "b96f9820aaf1ff9afe945207883149e1c7afb298"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/b96f9820aaf1ff9afe945207883149e1c7afb298",
+                "reference": "b96f9820aaf1ff9afe945207883149e1c7afb298",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/routing": "^6|^7|^8|^9",
+                "illuminate/session": "^6|^7|^8|^9",
+                "illuminate/support": "^6|^7|^8|^9",
+                "maximebf/debugbar": "^1.17.2",
+                "php": ">=7.2",
+                "symfony/debug": "^4.3|^5|^6",
+                "symfony/finder": "^4.3|^5|^6"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.3.3",
+                "orchestra/testbench-dusk": "^4|^5|^6|^7",
+                "phpunit/phpunit": "^8.5|^9.0",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.6-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Barryvdh\\Debugbar\\ServiceProvider"
+                    ],
+                    "aliases": {
+                        "Debugbar": "Barryvdh\\Debugbar\\Facades\\Debugbar"
+                    }
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Barryvdh\\Debugbar\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
             ],
-            "aliases": {
-              "Debugbar": "Barryvdh\\Debugbar\\Facades\\Debugbar"
-            }
-          }
+            "authors": [
+                {
+                    "name": "Barry vd. Heuvel",
+                    "email": "barryvdh@gmail.com"
+                }
+            ],
+            "description": "PHP Debugbar integration for Laravel",
+            "keywords": [
+                "debug",
+                "debugbar",
+                "laravel",
+                "profiler",
+                "webprofiler"
+            ],
+            "support": {
+                "issues": "https://github.com/barryvdh/laravel-debugbar/issues",
+                "source": "https://github.com/barryvdh/laravel-debugbar/tree/v3.6.7"
+            },
+            "funding": [
+                {
+                    "url": "https://fruitcake.nl",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/barryvdh",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-02-09T07:52:32+00:00"
         },
-        "autoload": {
-          "files": [
-            "src/helpers.php"
-          ],
-          "psr-4": {
-            "Barryvdh\\Debugbar\\": "src/"
-          }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-          "MIT"
-        ],
-        "authors": [
-          {
-            "name": "Barry vd. Heuvel",
-            "email": "barryvdh@gmail.com"
-          }
-        ],
-        "description": "PHP Debugbar integration for Laravel",
-        "keywords": [
-          "debug",
-          "debugbar",
-          "laravel",
-          "profiler",
-          "webprofiler"
-        ],
-        "support": {
-          "issues": "https://github.com/barryvdh/laravel-debugbar/issues",
-          "source": "https://github.com/barryvdh/laravel-debugbar/tree/v3.6.7"
-        },
-        "funding": [
-          {
-            "url": "https://fruitcake.nl",
-            "type": "custom"
-          },
-          {
-            "url": "https://github.com/barryvdh",
-            "type": "github"
-          }
-        ],
-        "time": "2022-02-09T07:52:32+00:00"
-      },
-      {
-        "name": "barryvdh/laravel-ide-helper",
-        "version": "v2.12.3",
-        "source": {
-          "type": "git",
-          "url": "https://github.com/barryvdh/laravel-ide-helper.git",
-          "reference": "3ba1e2573b38f72107b8aacc4ee177fcab30a550"
-        },
-        "dist": {
-          "type": "zip",
-          "url": "https://api.github.com/repos/barryvdh/laravel-ide-helper/zipball/3ba1e2573b38f72107b8aacc4ee177fcab30a550",
-          "reference": "3ba1e2573b38f72107b8aacc4ee177fcab30a550",
-          "shasum": ""
-        },
-        "require": {
-          "barryvdh/reflection-docblock": "^2.0.6",
-          "composer/pcre": "^1 || ^2 || ^3",
-          "doctrine/dbal": "^2.6 || ^3",
-          "ext-json": "*",
-          "illuminate/console": "^8 || ^9",
-          "illuminate/filesystem": "^8 || ^9",
-          "illuminate/support": "^8 || ^9",
-          "nikic/php-parser": "^4.7",
-          "php": "^7.3 || ^8.0",
-          "phpdocumentor/type-resolver": "^1.1.0"
-        },
-        "require-dev": {
-          "ext-pdo_sqlite": "*",
-          "friendsofphp/php-cs-fixer": "^2",
-          "illuminate/config": "^8 || ^9",
-          "illuminate/view": "^8 || ^9",
+        {
+            "name": "barryvdh/laravel-ide-helper",
+            "version": "v2.12.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/barryvdh/laravel-ide-helper.git",
+                "reference": "3ba1e2573b38f72107b8aacc4ee177fcab30a550"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/barryvdh/laravel-ide-helper/zipball/3ba1e2573b38f72107b8aacc4ee177fcab30a550",
+                "reference": "3ba1e2573b38f72107b8aacc4ee177fcab30a550",
+                "shasum": ""
+            },
+            "require": {
+                "barryvdh/reflection-docblock": "^2.0.6",
+                "composer/pcre": "^1 || ^2 || ^3",
+                "doctrine/dbal": "^2.6 || ^3",
+                "ext-json": "*",
+                "illuminate/console": "^8 || ^9",
+                "illuminate/filesystem": "^8 || ^9",
+                "illuminate/support": "^8 || ^9",
+                "nikic/php-parser": "^4.7",
+                "php": "^7.3 || ^8.0",
+                "phpdocumentor/type-resolver": "^1.1.0"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "friendsofphp/php-cs-fixer": "^2",
+                "illuminate/config": "^8 || ^9",
+                "illuminate/view": "^8 || ^9",
                 "mockery/mockery": "^1.4",
                 "orchestra/testbench": "^6 || ^7",
                 "phpunit/phpunit": "^8.5 || ^9",
@@ -6536,16 +6906,16 @@
         },
         {
             "name": "laravel/sail",
-            "version": "v1.13.9",
+            "version": "v1.14.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sail.git",
-                "reference": "7bb294fe99fc42c3b1bee83fb667cd7698b3c385"
+                "reference": "cee088fbe57432dd15678e3f7b6a8259f3073c46"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sail/zipball/7bb294fe99fc42c3b1bee83fb667cd7698b3c385",
-                "reference": "7bb294fe99fc42c3b1bee83fb667cd7698b3c385",
+                "url": "https://api.github.com/repos/laravel/sail/zipball/cee088fbe57432dd15678e3f7b6a8259f3073c46",
+                "reference": "cee088fbe57432dd15678e3f7b6a8259f3073c46",
                 "shasum": ""
             },
             "require": {
@@ -6573,124 +6943,124 @@
                     "Laravel\\Sail\\": "src/"
                 }
             },
-          "notification-url": "https://packagist.org/downloads/",
-          "license": [
-            "MIT"
-          ],
-          "authors": [
-            {
-              "name": "Taylor Otwell",
-              "email": "taylor@laravel.com"
-            }
-          ],
-          "description": "Docker files for running a basic Laravel application.",
-          "keywords": [
-            "docker",
-            "laravel"
-          ],
-          "support": {
-            "issues": "https://github.com/laravel/sail/issues",
-            "source": "https://github.com/laravel/sail"
-          },
-          "time": "2022-04-04T15:21:51+00:00"
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Docker files for running a basic Laravel application.",
+            "keywords": [
+                "docker",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/sail/issues",
+                "source": "https://github.com/laravel/sail"
+            },
+            "time": "2022-05-10T12:58:49+00:00"
         },
-      {
-        "name": "maximebf/debugbar",
-        "version": "v1.18.0",
-        "source": {
-          "type": "git",
-          "url": "https://github.com/maximebf/php-debugbar.git",
-          "reference": "0d44b75f3b5d6d41ae83b79c7a4bceae7fbc78b6"
+        {
+            "name": "maximebf/debugbar",
+            "version": "v1.18.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maximebf/php-debugbar.git",
+                "reference": "0d44b75f3b5d6d41ae83b79c7a4bceae7fbc78b6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maximebf/php-debugbar/zipball/0d44b75f3b5d6d41ae83b79c7a4bceae7fbc78b6",
+                "reference": "0d44b75f3b5d6d41ae83b79c7a4bceae7fbc78b6",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1|^8",
+                "psr/log": "^1|^2|^3",
+                "symfony/var-dumper": "^2.6|^3|^4|^5|^6"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.5.20 || ^9.4.2",
+                "twig/twig": "^1.38|^2.7|^3.0"
+            },
+            "suggest": {
+                "kriswallsmith/assetic": "The best way to manage assets",
+                "monolog/monolog": "Log using Monolog",
+                "predis/predis": "Redis storage"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.17-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "DebugBar\\": "src/DebugBar/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maxime Bouroumeau-Fuseau",
+                    "email": "maxime.bouroumeau@gmail.com",
+                    "homepage": "http://maximebf.com"
+                },
+                {
+                    "name": "Barry vd. Heuvel",
+                    "email": "barryvdh@gmail.com"
+                }
+            ],
+            "description": "Debug bar in the browser for php application",
+            "homepage": "https://github.com/maximebf/php-debugbar",
+            "keywords": [
+                "debug",
+                "debugbar"
+            ],
+            "support": {
+                "issues": "https://github.com/maximebf/php-debugbar/issues",
+                "source": "https://github.com/maximebf/php-debugbar/tree/v1.18.0"
+            },
+            "time": "2021-12-27T18:49:48+00:00"
         },
-        "dist": {
-          "type": "zip",
-          "url": "https://api.github.com/repos/maximebf/php-debugbar/zipball/0d44b75f3b5d6d41ae83b79c7a4bceae7fbc78b6",
-          "reference": "0d44b75f3b5d6d41ae83b79c7a4bceae7fbc78b6",
-          "shasum": ""
-        },
-        "require": {
-          "php": "^7.1|^8",
-          "psr/log": "^1|^2|^3",
-          "symfony/var-dumper": "^2.6|^3|^4|^5|^6"
-        },
-        "require-dev": {
-          "phpunit/phpunit": "^7.5.20 || ^9.4.2",
-          "twig/twig": "^1.38|^2.7|^3.0"
-        },
-        "suggest": {
-          "kriswallsmith/assetic": "The best way to manage assets",
-          "monolog/monolog": "Log using Monolog",
-          "predis/predis": "Redis storage"
-        },
-        "type": "library",
-        "extra": {
-          "branch-alias": {
-            "dev-master": "1.17-dev"
-          }
-        },
-        "autoload": {
-          "psr-4": {
-            "DebugBar\\": "src/DebugBar/"
-          }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-          "MIT"
-        ],
-        "authors": [
-          {
-            "name": "Maxime Bouroumeau-Fuseau",
-            "email": "maxime.bouroumeau@gmail.com",
-            "homepage": "http://maximebf.com"
-          },
-          {
-            "name": "Barry vd. Heuvel",
-            "email": "barryvdh@gmail.com"
-          }
-        ],
-        "description": "Debug bar in the browser for php application",
-        "homepage": "https://github.com/maximebf/php-debugbar",
-        "keywords": [
-          "debug",
-          "debugbar"
-        ],
-        "support": {
-          "issues": "https://github.com/maximebf/php-debugbar/issues",
-          "source": "https://github.com/maximebf/php-debugbar/tree/v1.18.0"
-        },
-        "time": "2021-12-27T18:49:48+00:00"
-      },
-      {
-        "name": "mockery/mockery",
-        "version": "1.5.0",
-        "source": {
-          "type": "git",
-          "url": "https://github.com/mockery/mockery.git",
-          "reference": "c10a5f6e06fc2470ab1822fa13fa2a7380f8fbac"
-        },
-        "dist": {
-          "type": "zip",
-          "url": "https://api.github.com/repos/mockery/mockery/zipball/c10a5f6e06fc2470ab1822fa13fa2a7380f8fbac",
-          "reference": "c10a5f6e06fc2470ab1822fa13fa2a7380f8fbac",
-          "shasum": ""
-        },
-        "require": {
-          "hamcrest/hamcrest-php": "^2.0.1",
-          "lib-pcre": ">=7.0",
-          "php": "^7.3 || ^8.0"
-        },
-        "conflict": {
-          "phpunit/phpunit": "<8.0"
-        },
-        "require-dev": {
-          "phpunit/phpunit": "^8.5 || ^9.3"
-        },
-        "type": "library",
-        "extra": {
-          "branch-alias": {
-            "dev-master": "1.4.x-dev"
-          }
-        },
+        {
+            "name": "mockery/mockery",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mockery/mockery.git",
+                "reference": "c10a5f6e06fc2470ab1822fa13fa2a7380f8fbac"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mockery/mockery/zipball/c10a5f6e06fc2470ab1822fa13fa2a7380f8fbac",
+                "reference": "c10a5f6e06fc2470ab1822fa13fa2a7380f8fbac",
+                "shasum": ""
+            },
+            "require": {
+                "hamcrest/hamcrest-php": "^2.0.1",
+                "lib-pcre": ">=7.0",
+                "php": "^7.3 || ^8.0"
+            },
+            "conflict": {
+                "phpunit/phpunit": "<8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.5 || ^9.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Mockery": "library/"
@@ -8914,127 +9284,127 @@
                     "role": "Developer"
                 }
             ],
-          "description": "A beautiful error page for Laravel applications.",
-          "homepage": "https://flareapp.io/ignition",
-          "keywords": [
-            "error",
-            "flare",
-            "laravel",
-            "page"
-          ],
-          "support": {
-            "docs": "https://flareapp.io/docs/ignition-for-laravel/introduction",
-            "forum": "https://twitter.com/flareappio",
-            "issues": "https://github.com/spatie/laravel-ignition/issues",
-            "source": "https://github.com/spatie/laravel-ignition"
-          },
-          "funding": [
-            {
-              "url": "https://github.com/spatie",
-              "type": "github"
-            }
-          ],
-          "time": "2022-04-14T18:04:51+00:00"
+            "description": "A beautiful error page for Laravel applications.",
+            "homepage": "https://flareapp.io/ignition",
+            "keywords": [
+                "error",
+                "flare",
+                "laravel",
+                "page"
+            ],
+            "support": {
+                "docs": "https://flareapp.io/docs/ignition-for-laravel/introduction",
+                "forum": "https://twitter.com/flareappio",
+                "issues": "https://github.com/spatie/laravel-ignition/issues",
+                "source": "https://github.com/spatie/laravel-ignition"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-04-14T18:04:51+00:00"
         },
-      {
-        "name": "symfony/debug",
-        "version": "v4.4.41",
-        "source": {
-          "type": "git",
-          "url": "https://github.com/symfony/debug.git",
-          "reference": "6637e62480b60817b9a6984154a533e8e64c6bd5"
+        {
+            "name": "symfony/debug",
+            "version": "v4.4.41",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/debug.git",
+                "reference": "6637e62480b60817b9a6984154a533e8e64c6bd5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/6637e62480b60817b9a6984154a533e8e64c6bd5",
+                "reference": "6637e62480b60817b9a6984154a533e8e64c6bd5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.3",
+                "psr/log": "^1|^2|^3"
+            },
+            "conflict": {
+                "symfony/http-kernel": "<3.4"
+            },
+            "require-dev": {
+                "symfony/http-kernel": "^3.4|^4.0|^5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Debug\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides tools to ease debugging PHP code",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/debug/tree/v4.4.41"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-04-12T15:19:55+00:00"
         },
-        "dist": {
-          "type": "zip",
-          "url": "https://api.github.com/repos/symfony/debug/zipball/6637e62480b60817b9a6984154a533e8e64c6bd5",
-          "reference": "6637e62480b60817b9a6984154a533e8e64c6bd5",
-          "shasum": ""
-        },
-        "require": {
-          "php": ">=7.1.3",
-          "psr/log": "^1|^2|^3"
-        },
-        "conflict": {
-          "symfony/http-kernel": "<3.4"
-        },
-        "require-dev": {
-          "symfony/http-kernel": "^3.4|^4.0|^5.0"
-        },
-        "type": "library",
-        "autoload": {
-          "psr-4": {
-            "Symfony\\Component\\Debug\\": ""
-          },
-          "exclude-from-classmap": [
-            "/Tests/"
-          ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-          "MIT"
-        ],
-        "authors": [
-          {
-            "name": "Fabien Potencier",
-            "email": "fabien@symfony.com"
-          },
-          {
-            "name": "Symfony Community",
-            "homepage": "https://symfony.com/contributors"
-          }
-        ],
-        "description": "Provides tools to ease debugging PHP code",
-        "homepage": "https://symfony.com",
-        "support": {
-          "source": "https://github.com/symfony/debug/tree/v4.4.41"
-        },
-        "funding": [
-          {
-            "url": "https://symfony.com/sponsor",
-            "type": "custom"
-          },
-          {
-            "url": "https://github.com/fabpot",
-            "type": "github"
-          },
-          {
-            "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-            "type": "tidelift"
-          }
-        ],
-        "time": "2022-04-12T15:19:55+00:00"
-      },
-      {
-        "name": "theseer/tokenizer",
-        "version": "1.2.1",
-        "source": {
-          "type": "git",
-          "url": "https://github.com/theseer/tokenizer.git",
-          "reference": "34a41e998c2183e22995f158c581e7b5e755ab9e"
-        },
-        "dist": {
-          "type": "zip",
-          "url": "https://api.github.com/repos/theseer/tokenizer/zipball/34a41e998c2183e22995f158c581e7b5e755ab9e",
-          "reference": "34a41e998c2183e22995f158c581e7b5e755ab9e",
-          "shasum": ""
-        },
-        "require": {
-          "ext-dom": "*",
-          "ext-tokenizer": "*",
-          "ext-xmlwriter": "*",
-          "php": "^7.2 || ^8.0"
-        },
-        "type": "library",
-        "autoload": {
-          "classmap": [
-            "src/"
-          ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-          "BSD-3-Clause"
-        ],
-        "authors": [
+        {
+            "name": "theseer/tokenizer",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/theseer/tokenizer.git",
+                "reference": "34a41e998c2183e22995f158c581e7b5e755ab9e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/theseer/tokenizer/zipball/34a41e998c2183e22995f158c581e7b5e755ab9e",
+                "reference": "34a41e998c2183e22995f158c581e7b5e755ab9e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-tokenizer": "*",
+                "ext-xmlwriter": "*",
+                "php": "^7.2 || ^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
                 {
                     "name": "Arne Blankerts",
                     "email": "arne@blankerts.de",

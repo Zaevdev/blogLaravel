@@ -66,7 +66,6 @@ Route::prefix('admin')->middleware(['auth', 'role:admin', 'verified'])->group(fu
     });
 });
 
-
 Auth::routes(['verify' => true]);
 
 Route::group(['middleware' => 'guest'], function () {

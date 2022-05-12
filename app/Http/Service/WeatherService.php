@@ -56,5 +56,4 @@ class WeatherService
 
         return $data;
     }
-
 }

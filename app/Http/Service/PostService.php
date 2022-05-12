@@ -67,5 +67,4 @@ class PostService
 
         return $data;
     }
-
 }

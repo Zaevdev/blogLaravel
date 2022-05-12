@@ -5,74 +5,42 @@
         <div class="col-lg-8">
             <!-- Featured blog post-->
             <div class="card mb-4">
-                <a href="#!"><img class="card-img-top" src="https://dummyimage.com/850x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                <a href="#!"><img class="card-img-top" src="https://dummyimage.com/850x350/dee2e6/6c757d.jpg"
+                                  alt="..."/></a>
                 <div class="card-body">
                     <div class="small text-muted">January 1, 2022</div>
                     <h2 class="card-title">Featured Post Title</h2>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid
+                        atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero
+                        voluptate voluptatibus possimus, veniam magni quis!</p>
                     <a class="btn btn-primary" href="#!">Read more →</a>
                 </div>
             </div>
             <!-- Nested row for non-featured blog posts-->
             <div class="row">
-                <div class="col-lg-6">
+
+                <div class="row">
+                @foreach($posts as $post)
                     <!-- Blog post-->
-                    <div class="card mb-4">
-                        <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
-                        <div class="card-body">
-                            <div class="small text-muted">January 1, 2022</div>
-                            <h2 class="card-title h4">Post Title</h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
-                            <a class="btn btn-primary" href="#!">Read more →</a>
+                        <div class="col-md-6">
+                            <div class="card mb-4">
+                                @if(isset($post->preview_image))
+                                    <img class="card-img-top"
+                                         src="{{ asset(Storage::url($post->preview_image)) }}" alt="..."/>
+                                @endif
+                                <div class="card-body">
+                                    <div class="small text-muted">{{ $post->updated_at->diffForHumans() }}</div>
+                                    <h2 class="card-title h4">{{ $post->title }}</h2>
+                                    <p class="card-text">{!! $post->content !!}</p>
+                                    <a class="btn btn-primary" href="#!">Read more →</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <!-- Blog post-->
-                    <div class="card mb-4">
-                        <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
-                        <div class="card-body">
-                            <div class="small text-muted">January 1, 2022</div>
-                            <h2 class="card-title h4">Post Title</h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
-                            <a class="btn btn-primary" href="#!">Read more →</a>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
-                <div class="col-lg-6">
-                    <!-- Blog post-->
-                    <div class="card mb-4">
-                        <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
-                        <div class="card-body">
-                            <div class="small text-muted">January 1, 2022</div>
-                            <h2 class="card-title h4">Post Title</h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
-                            <a class="btn btn-primary" href="#!">Read more →</a>
-                        </div>
-                    </div>
-                    <!-- Blog post-->
-                    <div class="card mb-4">
-                        <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
-                        <div class="card-body">
-                            <div class="small text-muted">January 1, 2022</div>
-                            <h2 class="card-title h4">Post Title</h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam.</p>
-                            <a class="btn btn-primary" href="#!">Read more →</a>
-                        </div>
-                    </div>
-                </div>
+                <!-- Pagination-->
+                {{ $posts->links() }}
             </div>
-            <!-- Pagination-->
-            <nav aria-label="Pagination">
-                <hr class="my-0" />
-                <ul class="pagination justify-content-center my-4">
-                    <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">Newer</a></li>
-                    <li class="page-item active" aria-current="page"><a class="page-link" href="#!">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#!">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#!">3</a></li>
-                    <li class="page-item disabled"><a class="page-link" href="#!">...</a></li>
-                    <li class="page-item"><a class="page-link" href="#!">15</a></li>
-                    <li class="page-item"><a class="page-link" href="#!">Older</a></li>
-                </ul>
-            </nav>
         </div>
         <!-- Side widgets-->
         <div class="col-lg-4">
@@ -81,7 +49,8 @@
                 <div class="card-header">Search</div>
                 <div class="card-body">
                     <div class="input-group">
-                        <input class="form-control" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search" />
+                        <input class="form-control" type="text" placeholder="Enter search term..."
+                               aria-label="Enter search term..." aria-describedby="button-search"/>
                         <button class="btn btn-primary" id="button-search" type="button">Go!</button>
                     </div>
                 </div>
@@ -93,7 +62,7 @@
                     <div class="row">
                         <div class="col-sm-12">
                             @foreach($categories as $category)
-                            <span class="badge bg-secondary">{{$category->title}}</span>
+                                <span class="badge bg-secondary">{{$category->title}}</span>
                             @endforeach
                         </div>
                     </div>
@@ -101,9 +70,20 @@
             </div>
             <!-- Side widget-->
             <div class="card mb-4">
-                <div class="card-header">Side Widget</div>
-                <div class="card-body">You can put anything you want inside of these side widgets. They are easy to use, and feature the Bootstrap 5 card component!</div>
+                <div class="card-header">Weather</div>
+                <div class="card shadow-0 border">
+                    <div class="card-body p-4">
+
+                        <h4 class="mb-1 sfw-normal">Nizhniy Novgorod</h4>
+                        <p class="mb-2">Current temperature: <strong>{{ $data['fact']['temp'] ?? '--'}}°C</strong></p>
+                        <p>Feels like: <strong>{{ $data['fact']['feels_like'] ?? '--' }}°C</strong></p>
+                        <div class="d-flex flex-row align-items-center">
+                            <p class="mb-0 me-4">{{ ucfirst($data['fact']['condition']?? '--') }}</p>
+                            <i class="fas fa-cloud fa-3x" style="color: #eee;"></i>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 @endsection

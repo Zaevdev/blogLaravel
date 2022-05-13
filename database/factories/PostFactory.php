@@ -4,6 +4,7 @@ namespace Database\Factories;
 
 use App\Models\Category;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use JetBrains\PhpStorm\ArrayShape;
 
 /**
  * @extends Factory
@@ -11,6 +12,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 class PostFactory extends Factory
 {
 
+    #[ArrayShape(['title' => "string", 'content' => "string", 'category_id' => "mixed|null"])]
     public function definition(): array
     {
         return [

@@ -29,9 +29,15 @@
                                          src="{{ asset(Storage::url($post->preview_image)) }}" alt="..."/>
                                 @endif
                                 <div class="card-body">
-                                    <div class="small text-muted">{{ $post->updated_at->diffForHumans() }}</div>
+                                    <div class="small text-muted">{{ $post->updated_at->diffForHumans() }}<span class="badge bg-light text-dark m-1">{{ $post->category->title }}</span></div>
+
                                     <h2 class="card-title h4">{{ $post->title }}</h2>
                                     <p class="card-text">{!! $post->content !!}</p>
+                                    <p>
+                                        @foreach($post->tags as $tag)
+                                        <span class="badge bg-secondary">{{ $tag->title }}</span>
+                                        @endforeach
+                                    </p>
                                     <a class="btn btn-primary" href="#!">Read more →</a>
                                 </div>
                             </div>

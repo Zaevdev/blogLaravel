@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Http\Service\Client;
 
+use App\DTO\Weather\WeatherDTO;
 use JetBrains\PhpStorm\ArrayShape;
 use JsonException;
 use Psr\Log\LoggerInterface;
@@ -24,14 +25,15 @@ class WeatherClient
         $this->logger = $logger;
     }
 
-    public function getActualWeather(): ?array
+    public function getActualWeather(): ?WeatherDTO
     {
         $response = $this->client->get(self::LINK, $this->getHeader());
 
         try {
-            return json_decode($response, true, 512, JSON_THROW_ON_ERROR);
+            return new WeatherDTO(json_decode($response, true, 512, JSON_THROW_ON_ERROR)['fact']);
         } catch (JsonException $exception) {
             $this->logger->error($exception->getMessage());
+
             return null;
         }
     }
@@ -49,4 +51,5 @@ class WeatherClient
             ]
         ];
     }
+
 }

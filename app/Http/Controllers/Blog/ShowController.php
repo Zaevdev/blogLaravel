@@ -10,7 +10,7 @@ use App\Models\{Category, Post};
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\{Factory, View};
 
-class IndexController extends Controller
+class ShowController extends Controller
 {
     private WeatherService $service;
 
@@ -19,12 +19,11 @@ class IndexController extends Controller
         $this->service = $service;
     }
 
-    public function __invoke(): Factory|View|Application
+    public function __invoke(Post $post): Factory|View|Application
     {
         $weather = $this->service->getWeather();
-        $posts = Post::paginate(10);
         $categories = Category::all();
 
-        return view('blog.index', compact('categories', 'weather', 'posts'));
+        return view('blog.show', compact('categories', 'weather', 'post'));
     }
 }

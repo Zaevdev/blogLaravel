@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Auth\SocialController;
 use App\Http\Controllers\Admin\Category\{
     CreateController,
     DeleteController,
@@ -24,6 +25,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix('/')->group(function () {
     Route::get('/', \App\Http\Controllers\Blog\IndexController::class)->name('blog.index');
+    Route::prefix('posts')->group(function () {
+        Route::get('/{post}', \App\Http\Controllers\Blog\ShowController::class)->name('blog.post.show');
+    });
 });
 
 Route::prefix('admin')->middleware(['auth', 'role:admin', 'verified'])->group(function () {
@@ -66,11 +70,12 @@ Route::prefix('admin')->middleware(['auth', 'role:admin', 'verified'])->group(fu
     });
 });
 
-Auth::routes(['verify' => true]);
 
-Route::group(['middleware' => 'guest'], function () {
-    Route::get('/vk/auth', [\App\Http\Controllers\Auth\SocialController::class, 'index'])->name('vk.auth');
-    Route::get('/vk/auth/callback', [\App\Http\Controllers\Auth\SocialController::class, 'callback']);
+Route::group(['middleware' => 'guest'], static function () {
+    Route::get('/vk/auth', [SocialController::class, 'index'])->name('vk.auth');
+    Route::get('/vk/auth/callback', [SocialController::class, 'callback']);
 });
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes(['verify' => true]);

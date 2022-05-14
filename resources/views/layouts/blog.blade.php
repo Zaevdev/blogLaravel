@@ -15,7 +15,7 @@
 <!-- Responsive navbar-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand" href="">BlogLaravel</a>
+        <a class="navbar-brand" href="{{ route('blog.index') }}"> BlogLaravel</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
                     class="navbar-toggler-icon"></span></button>
@@ -42,6 +42,51 @@
 <!-- Page content-->
 <div class="container">
     @yield('content')
+
+    @section('sidebar')
+        <div class="col-lg-4">
+            <!-- Search widget-->
+            <div class="card mb-4">
+                <div class="card-header">Search</div>
+                <div class="card-body">
+                    <div class="input-group">
+                        <input class="form-control" type="text" placeholder="Enter search term..."
+                               aria-label="Enter search term..." aria-describedby="button-search"/>
+                        <button class="btn btn-primary" id="button-search" type="button">Go!</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Categories widget-->
+            <div class="card mb-4">
+                <div class="card-header">Categories</div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            @foreach($categories as $category)
+                                <span class="badge bg-secondary">{{$category->title}}</span>
+                            @endforeach
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Side widget-->
+            <div class="card mb-4">
+                <div class="card-header">Weather</div>
+                <div class="card shadow-0 border">
+                    <div class="card-body p-4">
+                        <h4 class="mb-1 sfw-normal">Nizhniy Novgorod</h4>
+                        <p class="mb-2">Current temperature: <strong>{{ $weather->temp ?? '--'}}°C</strong></p>
+                        <p>Feels like: <strong>{{ $weather->tempFeelsLike ?? '--' }}°C</strong></p>
+                        <div class="d-flex flex-row align-items-center">
+                            <p class="mb-0 me-4">{{ ucfirst($weather->condition ?? '--') }}</p>
+                            <i class="fas fa-cloud fa-3x" style="color: #eee;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+    @show
 </div>
 <!-- Footer-->
 <footer class="py-5 bg-dark">

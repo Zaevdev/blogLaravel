@@ -4,19 +4,44 @@ declare(strict_types=1);
 
 namespace App\DTO\Weather;
 
-class WeatherDTO
+final class WeatherDTO
 {
-    public int $temp;
+    private int $temp;
 
-    public int $tempFeelsLike;
+    private int $tempFeelsLike;
 
-    public string $condition;
+    private string $condition;
 
-    public function __construct($data)
+    public function __construct(int $temp, int $tempFeelsLike, string $condition)
     {
-        $this->temp = $data['temp'];
-        $this->tempFeelsLike = $data['feels_like'];
-        $this->condition = $data['condition'];
+        $this->temp = $temp;
+        $this->tempFeelsLike = $tempFeelsLike;
+        $this->condition = $condition;
     }
+
+    /**
+     * @return int
+     */
+    public function getTemp(): int
+    {
+        return $this->temp;
+    }
+
+    /**
+     * @return int
+     */
+    public function getTempFeelsLike(): int
+    {
+        return $this->tempFeelsLike;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCondition(): string
+    {
+        return $this->condition;
+    }
+
 
 }

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Http\Service;
 
+use App\DTO\Weather\WeatherDTO;
 use App\Http\Service\Client\WeatherClient;
 use Cache;
 use Psr\Log\LoggerInterface;
@@ -20,7 +21,7 @@ class WeatherService
         $this->client = $client;
     }
 
-    public function getWeather(): mixed
+    public function getWeather(): WeatherDTO
     {
         if (!Cache::has('weather')) {
             $data = $this->client->getActualWeather();

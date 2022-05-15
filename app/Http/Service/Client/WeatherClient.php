@@ -30,7 +30,8 @@ class WeatherClient
         $response = $this->client->get(self::LINK, $this->getHeader());
 
         try {
-            return new WeatherDTO(json_decode($response, true, 512, JSON_THROW_ON_ERROR)['fact']);
+            $response = json_decode($response, true, 512, JSON_THROW_ON_ERROR)['fact'];
+            return new WeatherDTO($response['temp'], $response['feels_like'], $response['condition']);
         } catch (JsonException $exception) {
             $this->logger->error($exception->getMessage());
 

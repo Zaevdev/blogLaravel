@@ -12,6 +12,7 @@ use Psr\Log\LoggerInterface;
 class WeatherService
 {
     protected LoggerInterface $logger;
+
     protected WeatherClient $client;
 
     protected const TIME_LIFE_CACHE = 60 * 60; // seconds * minutes
@@ -21,7 +22,7 @@ class WeatherService
         $this->client = $client;
     }
 
-    public function getWeather(): WeatherDTO
+    public function getWeather(): ?WeatherDTO
     {
         if (!Cache::has('weather')) {
             $data = $this->client->getActualWeather();

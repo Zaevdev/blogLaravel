@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace App\DTO\Weather;
 
+use Carbon\Carbon;
+
 final class WeatherDTO
 {
     private int $temp;
@@ -12,11 +14,35 @@ final class WeatherDTO
 
     private string $condition;
 
-    public function __construct(int $temp, int $tempFeelsLike, string $condition)
+    private Carbon $date;
+
+    private string $location;
+
+    private const FORMAT_DATE = 'MMMM Do YYYY, H:mm:ss';
+
+    public function __construct(int $temp, int $tempFeelsLike, string $condition, Carbon $date, string $location)
     {
         $this->temp = $temp;
         $this->tempFeelsLike = $tempFeelsLike;
         $this->condition = $condition;
+        $this->date = $date;
+        $this->location = $location;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLocation(): string
+    {
+        return $this->location;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDate(): string
+    {
+        return $this->date->isoFormat(self::FORMAT_DATE);
     }
 
     /**
@@ -34,6 +60,7 @@ final class WeatherDTO
     {
         return $this->tempFeelsLike;
     }
+
 
     /**
      * @return string

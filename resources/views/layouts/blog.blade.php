@@ -74,13 +74,13 @@
                 <div class="card-header">Weather</div>
                 <div class="card shadow-0 border">
                     <div class="card-body p-4">
-                        <h4 class="mb-1 sfw-normal">Nizhniy Novgorod</h4>
-                        <p class="mb-2">Current temperature: <strong>{{ $weather->getTemp() ?? '--'}}°C</strong></p>
-                        <p>Feels like: <strong>{{ $weather->getTempFeelsLike() ?? '--' }}°C</strong></p>
+                        <h4 class="mb-1 sfw-normal">{{ $weather?->getLocation() ?? '--'}}</h4>
+                        <p class="mb-2">Current temperature: <strong>{{ $weather?->getTemp() ?? '--'}}°C</strong></p>
+                        <p>Feels like: <strong>{{ $weather?->getTempFeelsLike() ?? '--' }}°C</strong></p>
                         <div class="d-flex flex-row align-items-center">
-                            <p class="mb-0 me-4">{{ ucfirst($weather->getCondition() ?? '--') }}</p>
-                            <i class="fas fa-cloud fa-3x" style="color: #eee;"></i>
+                            <p class="mb-0 me-4">{{ ucfirst($weather?->getCondition() ?? '--') }}</p>
                         </div>
+                        <p class="mb-0 mt-2 text-black-50">Updated at: {{ $weather?->getDate() ?? '--' }}</p>
                     </div>
                 </div>
             </div>

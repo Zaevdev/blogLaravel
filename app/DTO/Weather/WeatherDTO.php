@@ -61,7 +61,6 @@ final class WeatherDTO
         return $this->tempFeelsLike;
     }
 
-
     /**
      * @return string
      */

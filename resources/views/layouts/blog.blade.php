@@ -25,7 +25,7 @@
                 <li class="nav-item"><a class="nav-link" href="">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="">Contact</a></li>
                 <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Blog</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{route('admin.blog.index')}}">AdminPanel</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('admin.blog.index') }}">AdminPanel</a></li>
             </ul>
         </div>
     </div>
@@ -41,6 +41,7 @@
 </header>
 <!-- Page content-->
 <div class="container">
+    <div class="row">
     @yield('content')
 
     @section('sidebar')
@@ -57,6 +58,12 @@
                 </div>
             </div>
             <!-- Categories widget-->
+            <?php
+            /**
+             * @var \App\DTO\Weather\WeatherDTO $weather
+             * @var \App\Models\Category[] $categories
+             */
+            ?>
             <div class="card mb-4">
                 <div class="card-header">Categories</div>
                 <div class="card-body">
@@ -86,7 +93,7 @@
             </div>
         </div>
 </div>
-    @show
+@show
 </div>
 <!-- Footer-->
 <footer class="py-5 bg-dark">

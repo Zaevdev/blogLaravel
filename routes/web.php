@@ -57,6 +57,7 @@ Route::prefix('admin')->middleware(['auth', 'role:admin', 'verified'])->group(fu
         Route::get('/{post}', \App\Http\Controllers\Admin\Post\ShowController::class)->name('admin.post.show');
         Route::get('/{post}/edit', \App\Http\Controllers\Admin\Post\EditController::class)->name('admin.post.edit');
         Route::patch('/{post}', \App\Http\Controllers\Admin\Post\UpdateController::class)->name('admin.post.update');
+        Route::delete('/delete', \App\Http\Controllers\Admin\Post\DeleteAllController::class)->name('admin.post.delete.all');
         Route::delete('/{post}', \App\Http\Controllers\Admin\Post\DeleteController::class)->name('admin.post.delete');
     });
     Route::prefix('users')->group(function () {

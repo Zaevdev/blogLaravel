@@ -1,13 +1,16 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Providers;
 
-use Illuminate\Pagination\Paginator;
+use App\View\Composers\CategoryComposer;
+use App\View\Composers\WeatherComposer;
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
-class AppServiceProvider extends ServiceProvider
+class ViewServiceProvider extends ServiceProvider
 {
-
     /**
      * Register any application services.
      *
@@ -25,7 +28,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        Paginator::useBootstrapFive();
-        Paginator::useBootstrapFour();
+        View::composer('blog*', WeatherComposer::class);
+        View::composer('blog*', CategoryComposer::class);
+
     }
 }

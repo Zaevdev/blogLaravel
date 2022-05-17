@@ -1,6 +1,8 @@
 @extends('layouts.blog')
 @section('content')
-    <div class="row">
+    @php
+        /**  @var \App\Models\Post $post */
+    @endphp
         <!-- Blog entries-->
         <div class="col-lg-8">
             <!-- Featured blog post-->

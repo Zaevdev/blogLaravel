@@ -12,7 +12,12 @@ use JetBrains\PhpStorm\ArrayShape;
 class PostFactory extends Factory
 {
 
-    #[ArrayShape(['title' => "string", 'content' => "string", 'category_id' => "mixed|null"])]
+    #[ArrayShape([
+        'title' => "string",
+        'content' => "string",
+        //'preview_image' => "string",
+        'category_id' => "mixed|null"
+    ])]
     public function definition(): array
     {
         return [

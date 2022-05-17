@@ -4,10 +4,16 @@
     <h1>Tags</h1>
 @stop
 @section('content')
-    <a class="btn btn-app" href="{{route('admin.post.create')}}">
-        <i class="fas fa-edit"></i> Add post
-    </a>
-
+    <div class="row">
+        <a class="btn btn-app" href="{{route('admin.post.create')}}">
+            <i class="fas fa-edit"></i> Add post
+        </a>
+        <form action="{{ route('admin.post.delete.all') }}" method="POST">
+            @csrf
+            @method('delete')
+            <button type="submit" class="btn btn-app"><i class="fas fa-edit"></i>Delete all</button>
+        </form>
+    </div>
     <div class="card-body">
         <table class="table table-bordered">
             <thead>
@@ -19,6 +25,7 @@
             </thead>
             <tbody>
             @foreach($posts as $post)
+                @php /** @var App\Models\Post $post */ @endphp
                 <tr>
                     <td>{{$post->id}}</td>
                     <td>{{$post->title}}</td>
@@ -32,8 +39,8 @@
     </div>
 @stop
 @section('css')
-    <link rel="stylesheet" href="/css/admin_custom.css">
+
 @stop
 @section('js')
-    <script> console.log('Hi!'); </script>
+
 @stop

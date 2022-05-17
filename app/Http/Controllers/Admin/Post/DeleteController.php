@@ -9,6 +9,8 @@ class DeleteController extends Controller
 {
     public function __invoke(Post $post)
     {
+        $post->tags()->detach();
+
         $post->delete();
 
         return redirect()->route('admin.post.index');

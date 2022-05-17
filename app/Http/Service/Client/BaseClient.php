@@ -28,7 +28,7 @@ class BaseClient
         } catch (GuzzleException $exception) {
             $this->logger->error($exception->getMessage());
 
-            return 'Error';
+            return 'error';
         }
     }
 

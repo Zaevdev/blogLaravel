@@ -7,11 +7,9 @@ namespace App\Http\Service;
 use App\DTO\Weather\WeatherDTO;
 use App\Http\Service\Client\WeatherClient;
 use Cache;
-use Psr\Log\LoggerInterface;
 
 class WeatherService
 {
-    protected LoggerInterface $logger;
 
     protected WeatherClient $client;
 
